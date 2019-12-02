@@ -16,7 +16,7 @@
 					<span class="gnb-txt">Company</span><span class="arrow">∨</span>
 					<ul class="lnb-wrap">
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu01_01">Overview</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu01_02">Vision</a></li>
+						<li class="lnb"><a href="${pageContext.request.contextPath}/#vision">Vision</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu01_03">Career</a></li>
 					</ul>
 				</li>

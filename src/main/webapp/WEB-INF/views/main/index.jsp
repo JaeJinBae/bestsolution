@@ -12,6 +12,7 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style.common.css" />
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/main.css" />
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/common.js"></script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=939c592a22900ccd6ad53604071e06bb&libraries=drawing"></script>
 <style>
 
@@ -77,7 +78,7 @@ $(function(){
 					<h3>We can make high quality result.</h3>
 				</div><!-- inner end -->
 			</div><!-- sec2 end -->
-			<div class="section_div sec3">
+			<div class="section_div sec3" id="vision">
 				<div class="inner">
 					<div class="line_vertical"></div>
 					<h4 class="sec_title">VISION</h4>

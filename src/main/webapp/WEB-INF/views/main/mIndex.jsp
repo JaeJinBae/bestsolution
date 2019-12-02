@@ -12,29 +12,14 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style.common.css" />
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/m/main.css" />
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/m/common.js"></script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=939c592a22900ccd6ad53604071e06bb&libraries=drawing"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, viewport-fit=cover">
 <style>
 
 </style>
 <script>
-$(function(){
-	$('#hamburger').click(function(){
-		$(this).toggleClass('active');
-		$("#menu-bg").stop().fadeToggle(200);
-		var txt = $(this).prop("class");
-		if(txt.indexOf("active") > -1){
-			$("#m-header > .logo-wrap > a > img").prop("src","/bestsolution/resources/img/main/logo-white.png");
-		}else{			
-			$("#m-header > .logo-wrap > a > img").prop("src","/bestsolution/resources/img/main/logo2.png");
-		}
-		$(".m-menu-wrap").slideToggle();
-		
-	});
-	$(".m-menu-wrap > .gnb-wrap > .gnb").click(function(){
-		$(this).find(".lnb-wrap").slideToggle();
-	});
-});
+
 </script>
 </head>
 <body>
@@ -87,7 +72,7 @@ $(function(){
 					<h3>We can make<br>high quality result.</h3>
 				</div><!-- inner end -->
 			</div><!-- sec2 end -->
-			<div class="section_div sec3">
+			<div class="section_div sec3" id="vision">
 				<div class="inner">
 					<div class="line_vertical"></div>
 					<h4 class="sec_title">VISION</h4>

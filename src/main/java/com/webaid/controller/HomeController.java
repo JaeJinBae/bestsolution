@@ -23,7 +23,6 @@ public class HomeController {
 	public String home(HttpServletRequest req, Model model) {
 		logger.info("main");
 
-
 		Device device=DeviceUtils.getCurrentDevice(req);
 		String deviceType="unknown";
 		
@@ -46,8 +45,56 @@ public class HomeController {
 			logger.info("디바이스타입= "+deviceType);
 				
 			return "main/index";
-		}
-		
+		}		
 	}
 	
+	
+	@RequestMapping(value = "/menu01_01", method = RequestMethod.GET)
+	public String menu01_01(HttpServletRequest req, Model model) {
+		logger.info("menu01_01");
+		
+		return "pc/menu01_01";
+	}
+	
+	@RequestMapping(value = "/menu01_02", method = RequestMethod.GET)
+	public String menu01_02(HttpServletRequest req, Model model) {
+		logger.info("menu01_02");
+		
+		return "pc/menu01_02";
+	}
+	
+	@RequestMapping(value = "/menu01_03", method = RequestMethod.GET)
+	public String menu01_03(HttpServletRequest req, Model model) {
+		logger.info("menu01_03");
+		
+		return "pc/menu01_03";
+	}
+	
+	@RequestMapping(value = "/menu02_01", method = RequestMethod.GET)
+	public String menu02_01(HttpServletRequest req, Model model) {
+		logger.info("menu02_01");
+		
+		return "pc/menu02_01";
+	}
+	
+	@RequestMapping(value = "/menu02_02", method = RequestMethod.GET)
+	public String menu02_02(HttpServletRequest req, Model model) {
+		logger.info("menu02_02");
+		
+		return "pc/menu02_02";
+	}
+	
+	@RequestMapping(value = "/menu02_03", method = RequestMethod.GET)
+	public String menu02_03(HttpServletRequest req, Model model) {
+		logger.info("menu02_03");
+		
+		return "pc/menu02_03";
+	}
+	
+	@RequestMapping(value = "/menu02_04", method = RequestMethod.GET)
+	public String menu02_04(HttpServletRequest req, Model model) {
+		logger.info("menu02_04");
+		
+		return "pc/menu02_04";
+	}
 }
