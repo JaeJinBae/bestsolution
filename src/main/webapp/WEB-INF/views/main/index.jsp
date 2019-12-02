@@ -13,274 +13,7 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/main.css" />
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-1.12.4.min.js"></script>
 <style>
-html{
-	width: 100%;
-	height: 100%;
-}
-body{
-	width: 100%;
-	height: 100%;
-}
-#all_wrap{
-	margin: 0;
-	padding: 0;
-	position: relative;
-	width: 100%;
-	height: 100%;
-}
-header{
-	width: 100%;
-	position: absolute;
-	top: 0;
-	z-index: 999;
-}
-.pc_header_wrap{
-	width: 1200px;
-	margin: 0 auto;
-}
-.logo_wrap{
-	width: 300px;
-	float: left;
-	padding-top: 20px;
-}
-.logo_wrap > a{
-	width: 100%;
-}
-.logo_wrap > a > img{
-	width: 100%;
-}
 
-
-.menu_wrap{
-	width: 470px;
-	float: right;
-}
-.menu_wrap > .gnb_wrap{
-	width: 100%;
-	margin: 0 auto;
-	overflow: hidden;
-	text-align: center;
-}
-
-.menu_wrap > .gnb_wrap > .gnb{
-	float: left; 
-	width: 150px;
-	padding: 40px 0;
-	cursor: pointer;
-	font-size: 17px;
-}
-.menu_wrap > .gnb_wrap:hover{
-	color: #333;
-	transition-duration: 200ms;
-	transition-property: color;
-	transition-timing-function: ease;
-}
-.menu_wrap > .gnb_wrap > .gnb > .lnb_wrap{
-	padding: 0;
-	width: 100%;
-	margin-top: 25px;
-	display: none;
-	background: url("/bestsolution/resources/img/common/bg.png");
-	background-size: contain;
-}
-.menu_wrap > .gnb_wrap > .gnb > .lnb_wrap > .lnb{
-	padding: 5px 0;
-}
-
-.menu_wrap > .gnb_wrap > .gnb > .lnb_wrap > .lnb > a{
-	color: #333; 
-}
-.menu_wrap > .gnb_wrap:hover > .gnb > a{
-	color: #333;
-	transition-duration: 200ms;
-	transition-property: color;
-	transition-timing-function: ease;
-}
-
-.main_container{
-	width: 100%;
-	height: 100%;
-}
-.section_div{
-	width: 100%;
-	height: 100%;
-}
-.section_div > .inner{
-	width: 100%;
-	min-width: 1200px;
-	height: 100%;
-	position: relative;
-	text-align: center;
-	padding: 20px 0;
-}
-.line_vertical{
-	width: 2px;
-	height: 50px;
-	background: #005188;
-	margin: 0px auto;
-}
-.sec_title{
-	width: 100%;
-	text-align: center;
-	font-size: 20px;
-	font-weight: bold;
-	color: #005188;
-	padding: 40px 0;
-}
-.sec1{
-	background: #4d4d4d;
-}
-.sec1 > .inner > h2{
-	position: absolute;
-	top: 45%;
-	width: 100%;
-	font-size: 45px;
-	font-weight: bold;
-	text-align: center;
-	letter-spacing: 4px;
-}
-.sec2{
-	
-}
-
-.sec2 > .inner > h2{
-	width: 100%;
-	text-align: center;
-	font-size: 45px;
-	font-weight: bold;
-	padding: 55px 0;
-}
-.sec2 > .inner > .box_wrap{
-	width: 1300px;
-	margin: 0 auto;
-}
-.sec2 > .inner > .box_wrap > .box_content{
-	width: 19.5%;
-	display: inline-block;
-	border: 1px solid lightgray;
-	padding: 25px 0;
-	text-align: center;
-}
-.box_content > img{
-	margin-bottom: 20px;
-}
-.box_content > .line{
-	width: 50%;
-	height: 2px;
-	background: #cccccc;
-	margin: 0 auto;
-}
-.box_content > .box_title{
-	width: 100%;
-	text-align: center;
-	font-size: 23px;
-	font-weight: bold;
-	padding: 20px 0;
-}
-.box_content > .box_txt{
-	width: 100%;
-	text-align: center;
-	line-height: 23px;
-}
-.sec2 > .inner > h3{
-	width: 100%;
-	text-align: center;
-	font-size: 45px;
-	font-weight: bold;
-	padding-top: 50px; 
-}
-.sec3{
-	background: #aaa;
-	height: auto;
-}
-.sec3 > .inner > img{
-	margin: 50px 0 100px 0;
-}
-.sec3 > .inner > h3{
-	font-size: 27px;
-	line-height: 35px;
-	color: #555555;
-}
-.sec4{
-	height: auto;
-}
-.sec4 > .inner{
-	width: 1200px;
-	margin: 0 auto;
-}
-.sec4 > .inner > .form_wrap{
-	width: 100%;
-	overflow: hidden;
-}
-.sec4 > .inner > .form_wrap > .form_top{
-	width: 100%;
-	border: 1px solid lightgray;
-	margin-bottom: 50px;
-}
-.sec4 > .inner > .form_wrap > .form_top > div{
-	width: 96.5%;
-	height: 200px;
-	padding: 20px;
-	line-height: 20px;
-	overflow: scroll;
-	overflow-x: hidden;
-	text-align: left;
-	
-}
-.form_left{
-	width: 45%;
-	float: left;
-}
-.form_left > p{
-	padding: 15px;
-	border-bottom: 1px solid lightgray;
-	text-align: left;
-}
-.form_left > p:first-child{
-	border-top: 1px solid lightgray;
-}
-.form_left > p > span{
-	width: 90px;
-	display: inline-block;
-}
-.form_left > p > input{
-	width: 70%;
-	padding: 10px;
-	border: 1px solid #efefef;
-}
-.form_right{
-	width: 50%;
-	float: right;
-	text-align: right;
-}
-.form_right > textarea{
-	width: 93%;
-	height: 295px;
-	resize: none;
-	font-size: 15px;
-	line-height: 20px;
-	padding: 20px;
-	border-top:1px solid lightgray;
-	border-bottom:1px solid lightgray;
-	margin-bottom: 10px;
-}
-#submit_btn{
-	padding: 15px 20px;
-	font-size: 17px;
-	background: #005188;
-	color: #fff;
-	margin-top: 10px;
-}
-.form_bottom{
-	width: 100%;
-	clear: both;
-	padding-top: 100px;
-}
-.form_bottom > #map{
-	width: 100%;
-	height: 500px;
-	background: green;
-}
 </style>
 <script>
 $(function(){
@@ -356,7 +89,7 @@ $(function(){
 					</h3>
 				</div><!-- inner end -->
 			</div><!-- sec3 end -->
-			<div class="section_div sec4">
+			<div class="section_div sec4" id="contactus">
 				<div class="inner">
 					<div class="line_vertical"></div>
 					<h4 class="sec_title">CONTACT US</h4>
@@ -396,14 +129,15 @@ $(function(){
 						<div class="form_bottom">
 							<div id="map"></div>
 							<div class="info">
-								<p>BEST SOLUTION</p>
 								<p><strong>Address</strong><br>대구광역시 중구 국채보상로 586, 16층</p>
-								<p><strong>Tel</strong><br>053-657-1858</p>
+								<p><strong>Tel</strong><br>053-657-1858<br>010-6811-1856</p>
+								<p><strong>E-mail</strong><br>bsc6181@daum.net<br></p>
 							</div>
 						</div>
 					</div><!-- form_wrap end -->
 				</div><!-- inner end -->
 			</div><!-- sec4 end -->
+			<jsp:include page="../include/pcFooter.jsp"></jsp:include><!-- footer end -->
 		</section><!-- main_container end -->
 		<footer>
 			

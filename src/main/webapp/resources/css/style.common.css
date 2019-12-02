@@ -19,7 +19,7 @@
 /**********************************************************************/
 
 *{
-	font-family: NanumSquare;
+	font-family: NanumSquare !important;
 }
 input[type='password']{
 	font-family: serif;
@@ -33,17 +33,6 @@ input[type='password']{
 	background-color:  #efede5;
 }
 
-/* ****************************************************************** */
-@media only screen and (min-width:1200px){
-	
-}
-@media only screen and (min-width:768px) and (max-width:1199px){
-	
-	
-}
-@media only screen and (min-width:320px) and (max-width:767px){
-	
-}
 
 
 
