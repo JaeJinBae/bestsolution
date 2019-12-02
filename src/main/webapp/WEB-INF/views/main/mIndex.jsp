@@ -385,16 +385,18 @@ strong{
 	font-weight: bold;
 }
 #footer{
-	padding: 10px;
+	padding: 10px 0;
 	text-align: center;
 }
-#footer > p{
+#footer > p{ 
 	display: inline-block;
 	padding: 0 15px;
 	line-height: 18px;
 }
 #footer > p:last-child{
+	padding: 0;
 	padding-top: 15px;
+	letter-spacing: -1px;
 }
 </style>
 <script>
