@@ -12,6 +12,7 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style.common.css" />
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/main.css" />
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=939c592a22900ccd6ad53604071e06bb&libraries=drawing"></script>
 <style>
 
 </style>
@@ -128,6 +129,57 @@ $(function(){
 						</div><!-- form_right end -->
 						<div class="form_bottom">
 							<div id="map"></div>
+							<script>
+								var container = document.getElementById('map');
+								var options = {
+									center: new daum.maps.LatLng(35.870606, 128.594836),
+									level: 3
+								};
+						
+								var map = new daum.maps.Map(container, options);
+								
+								// 마커가 표시될 위치입니다 
+								var markerPosition  = new daum.maps.LatLng(35.870606, 128.594836); 
+			
+								// 마커를 생성합니다
+								var marker = new daum.maps.Marker({
+								    position: markerPosition
+								});
+			
+								// 마커가 지도 위에 표시되도록 설정합니다
+								marker.setMap(map);
+								
+								// 마커에 커서가 오버됐을 때 마커 위에 표시할 인포윈도우를 생성합니다.
+								var iwContent = '<div style="padding-left:30px; padding-top:2px; color:#3353a2; font-size:15px; font-weight:bold;">베스트 솔루션</div>'; // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+			
+								// 인포윈도우를 생성합니다
+								var infowindow = new daum.maps.InfoWindow({
+								    content : iwContent
+								});
+			
+								// 마커에 마우스오버 이벤트를 등록합니다
+								daum.maps.event.addListener(marker, 'mouseover', function() {
+								  // 마커에 마우스오버 이벤트가 발생하면 인포윈도우를 마커위에 표시합니다
+								    infowindow.open(map, marker);
+								});
+			
+								// 마커에 마우스아웃 이벤트를 등록합니다
+								daum.maps.event.addListener(marker, 'mouseout', function() {
+								    // 마커에 마우스아웃 이벤트가 발생하면 인포윈도우를 제거합니다
+								    infowindow.close();
+								});
+								
+								daum.maps.event.addListener(marker, 'click', function() {
+								  // 마커에 마우스오버 이벤트가 발생하면 인포윈도우를 마커위에 표시합니다
+								    infowindow.open(map, marker);
+								});
+								
+								// 마커에 마우스아웃 이벤트를 등록합니다
+								daum.maps.event.addListener(map, 'click', function() {
+								    // 마커에 마우스아웃 이벤트가 발생하면 인포윈도우를 제거합니다
+								    infowindow.close();
+								});
+							</script>
 							<div class="info">
 								<p><strong>Address</strong><br>대구광역시 중구 국채보상로 586, 16층</p>
 								<p><strong>Tel</strong><br>053-657-1858<br>010-6811-1856</p>

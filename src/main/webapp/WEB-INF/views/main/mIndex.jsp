@@ -12,392 +12,10 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style.common.css" />
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/m/main.css" />
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=939c592a22900ccd6ad53604071e06bb&libraries=drawing"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, viewport-fit=cover">
 <style>
-html{
-	width: 100%;
-	height: 100%;
-}
-body{
-	width: 100%;
-	height: 100%;
-}
-#all_wrap{
-	width: 100%;
-	height: 100%;
-}
-header{
-	position: fixed;
-	width: 100%;
-	top: 18px;
-	z-index: 999;
-}
-header{
-	top:0;
-   	padding: 15px 0;
-}
-.active-menu{
-	background: url("../img/common/nav-bg-white.png") no-repeat;
-   	background-size: cover;
-}
-#m-header{
-	width: 100%;
-}
-#m-header > .logo-wrap{
-	width: 200px;
-	margin-left: 15px;
-}
-#m-header > .logo-wrap > a{
-	width: 100%;
-}
-#m-header > .logo-wrap > a > img{
-	width: 100%;
-}
-#m-header .gnb-txt{
-	color: #fff;
-	font-size: 15px;
-	
-}
-/* 햄버거 버튼 스타일 및 트랜지션 */
-.hamburger {
-	position: absolute;
-	top: 50%;
-	right: 10px;
-	transform: translate(0, -50%);
-	z-index: 11;
-	cursor: pointer;
-}
 
-.hamburger:hover {
-	opacity: 0.7;
-}
-.box {
-	width: 40px;
-	height: 24px;
-	display: inline-block;
-	position: relative;
-}
-
-.bar {
-	display: block;
-	top: 50%;
-}
-
-.bar, .bar::before, .bar::after {
-	width: 35px;
-	height: 3px;
-	border-radius: 5px;
-	background-color: #262626;
-	position: absolute;
-	transition-property: transform;
-	transition-duration: 0.15s;
-	transition-timing-function: ease;
-}
-
-.bar::before, .bar::after {
-	content: "";
-	display: block;
-}
-
-.bar::before {
-	top: -13px;
-}
-
-.bar::after {
-	bottom: -13px;
-}
-
-.spin .bar {
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-	transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.spin .bar::before {
-	transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
-}
-
-.spin .bar::after {
-	transition: bottom 0.1s 0.25s ease-in, transform 0.22s
-		cubic-bezier(0.55, 0.055, 0.675, 0.19);
-}
-
-.spin.active .bar {
-	background-color: #fff;
-	transform: rotate(225deg);
-	transition-delay: 0.12s;
-	transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-.spin.active .bar::before {
-	background-color: #fff;
-	top: 0;
-	opacity: 0;
-	transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
-}
-
-.spin.active .bar::after {
-	background-color: #fff;
-	bottom: 0;
-	transform: rotate(-90deg);
-	transition: bottom 0.1s ease-out, transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
-}
-
-#menu-bg{
-	display: none;
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	background: #333;
-	opacity: 0.7;
-	z-index: 9;
-}
-.m-menu-wrap{
-	position: fixed;
-	top: 90px;
-	width: 100%;
-	display: none;
-}
-.m-menu-wrap > .gnb-wrap > .gnb{
-	padding: 10px 30px;
-	color: #fff;
-}
-.arrow{
-	float: right;
-	margin-right: 20px;
-	font-weight: bold;
-}
-.m-menu-wrap > .gnb-wrap > .gnb > .lnb-wrap{
-	display: none;
-}
-.m-menu-wrap > .gnb-wrap > .gnb > .lnb-wrap > .lnb > a{
-	color: #fff;
-	font-size: 14px;
-}
-.m-menu-wrap > .gnb-wrap > .gnb > .lnb-wrap{
-	padding: 10px 0;
-}
-.m-menu-wrap > .gnb-wrap > .gnb > .lnb-wrap > .lnb{
-	padding: 5px 0;
-	padding-left: 20px;
-}
-
-.main_container{
-	width: 100%;
-	height: 100%;
-}
-.section_div{
-	width: 100%;
-	height: 100%;
-	padding: 20px 0px;
-}
-.section_div > .inner{
-	width: 97%;
-	height: 100%;
-	margin: 0 auto;
-}
-.line_vertical{
-	width: 2px;
-	height: 30px;
-	background: #005188;
-	margin: 0px auto;
-}
-.sec_title{
-	width: 100%;
-	text-align: center;
-	font-size: 20px;
-	font-weight: bold;
-	color: #005188;
-	padding: 40px 0;
-}
-.sec1{
-	background: #eaeaea;
-}
-.sec1 > .inner{
-	position: relative;
-}
-.sec1 > .inner > h2{
-	width: 100%;
-	position: absolute;
-	top: 45%;
-	font-size: 35px;
-	font-weight: bold;
-	text-align: center;
-}
-.sec2{
-	height: auto;
-}
-.sec2 > .inner > h2{
-	width: 100%;
-	text-align: center;
-	font-size: 25px;
-	font-weight: bold;
-	padding-bottom: 55px;
-}
-.sec2 > .inner > .box_wrap{
-	width: 100%;
-	margin: 0 auto;
-}
-.sec2 > .inner > .box_wrap > .box_content{
-	width: 100%;
-	display: inline-block;
-	border: 1px solid lightgray;
-	padding: 25px 0;
-	text-align: center;
-}
-.box_content > img{
-	margin-bottom: 20px;
-}
-.box_content > .line{
-	width: 58%;
-	height: 2px;
-	background: #cccccc;
-	margin: 0 auto;
-}
-.box_content > .box_title{
-	width: 100%;
-	text-align: center;
-	font-size: 23px;
-	font-weight: bold;
-	padding: 20px 0;
-}
-.box_content > .box_txt{
-	width: 100%;
-	text-align: center;
-	line-height: 23px;
-}
-.sec2 > .inner > h3{
-	width: 100%;
-	text-align: center;
-	font-size: 25px;
-	font-weight: bold;
-	padding: 50px 0; 
-}
-.sec3{
-	background: #aaa;
-	height: auto;
-	text-align: center;
-}
-.sec3 > .inner > img{
-	width: 95%;
-	margin: 50px 0 100px 0;
-}
-.sec3 > .inner > h3{
-	width: 100%;
-	font-size: 15px;
-	line-height: 25px;
-	color: #555555;
-	text-align: center;
-}
-.sec4{
-	height: auto;
-}
-.sec4 > .inner{
-	width: 100%;
-	margin: 0 auto;
-}
-.sec4 > .inner > .form_wrap{
-	width: 100%;
-	overflow: hidden;
-}
-.sec4 > .inner > .form_wrap > .form_top{
-	width: 100%;
-	border: 1px solid lightgray;
-	margin-bottom: 50px;
-}
-.sec4 > .inner > .form_wrap > .form_top > div{
-	width: 90.5%;
-	height: 200px;
-	padding: 15px 0;
-	margin: 0 auto;
-	line-height: 20px;
-	overflow: scroll;
-	overflow-x: hidden;
-	text-align: left;
-	
-}
-.form_left{
-	width: 100%;
-}
-.form_left > p{
-	padding: 15px;
-	border-bottom: 1px solid lightgray;
-	text-align: left;
-}
-.form_left > p:first-child{
-	border-top: 1px solid lightgray; 
-}
-.form_left > p > span{
-	width: 90px;
-	display: inline-block;
-}
-.form_left > p > input{
-	width: 58%;
-	padding: 10px;
-	border: 1px solid #efefef;
-}
-.form_right{
-	width: 100%;
-	text-align: right;
-}
-.form_right > textarea{
-	width: 93%;
-	height: 295px;
-	resize: none;
-	font-size: 15px;
-	line-height: 20px;
-	padding: 20px;
-	border-top:1px solid lightgray;
-	border-bottom:1px solid lightgray;
-	margin-bottom: 10px;
-}
-.form_right > label{
-	margin-right: 10px;
-}
-#submit_btn{
-	padding: 15px 20px;
-	font-size: 17px;
-	background: #005188;
-	color: #fff;
-	margin-top: 10px;
-	margin-right: 10px;
-}
-.form_bottom{
-	width: 100%;
-	padding-top: 100px;
-}
-.form_bottom > #map{
-	width: 100%;
-	height: 500px;
-	background: green;
-}
-.form_bottom > .info > p{
-	width: 100%;
-	text-align: left;
-	vertical-align: top;
-	padding: 15px 20px;
-	line-height: 25px;
-}
-strong{
-	font-weight: bold;
-}
-#footer{
-	padding: 10px 0;
-	text-align: center;
-}
-#footer > p{ 
-	display: inline-block;
-	padding: 0 15px;
-	line-height: 18px;
-}
-#footer > p:last-child{
-	padding: 0;
-	padding-top: 15px;
-	letter-spacing: -1px;
-}
 </style>
 <script>
 $(function(){
@@ -521,6 +139,57 @@ $(function(){
 						</div><!-- form_right end -->
 						<div class="form_bottom">
 							<div id="map"></div>
+							<script>
+								var container = document.getElementById('map');
+								var options = {
+									center: new daum.maps.LatLng(35.870606, 128.594836),
+									level: 3
+								};
+						
+								var map = new daum.maps.Map(container, options);
+								
+								// 마커가 표시될 위치입니다 
+								var markerPosition  = new daum.maps.LatLng(35.870606, 128.594836); 
+			
+								// 마커를 생성합니다
+								var marker = new daum.maps.Marker({
+								    position: markerPosition
+								});
+			
+								// 마커가 지도 위에 표시되도록 설정합니다
+								marker.setMap(map);
+								
+								// 마커에 커서가 오버됐을 때 마커 위에 표시할 인포윈도우를 생성합니다.
+								var iwContent = '<div style="padding-left:30px; padding-top:2px; color:#3353a2; font-size:15px; font-weight:bold;">베스트 솔루션</div>'; // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+			
+								// 인포윈도우를 생성합니다
+								var infowindow = new daum.maps.InfoWindow({
+								    content : iwContent
+								});
+			
+								// 마커에 마우스오버 이벤트를 등록합니다
+								daum.maps.event.addListener(marker, 'mouseover', function() {
+								  // 마커에 마우스오버 이벤트가 발생하면 인포윈도우를 마커위에 표시합니다
+								    infowindow.open(map, marker);
+								});
+			
+								// 마커에 마우스아웃 이벤트를 등록합니다
+								daum.maps.event.addListener(marker, 'mouseout', function() {
+								    // 마커에 마우스아웃 이벤트가 발생하면 인포윈도우를 제거합니다
+								    infowindow.close();
+								});
+								
+								daum.maps.event.addListener(marker, 'click', function() {
+								  // 마커에 마우스오버 이벤트가 발생하면 인포윈도우를 마커위에 표시합니다
+								    infowindow.open(map, marker);
+								});
+								
+								// 마커에 마우스아웃 이벤트를 등록합니다
+								daum.maps.event.addListener(map, 'click', function() {
+								    // 마커에 마우스아웃 이벤트가 발생하면 인포윈도우를 제거합니다
+								    infowindow.close();
+								});
+							</script>
 							<div class="info">
 								<p><strong>Address</strong><br>대구광역시 중구 국채보상로 586, 16층</p>
 								<p><strong>Tel</strong><br><a href="tel:053-657-1858">053-657-1858</a><br><a href="tel:010-6811-1856">010-6811-1856</a></p>
