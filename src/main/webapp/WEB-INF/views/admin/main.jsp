@@ -71,7 +71,7 @@ function draw_time_chart(info){
 
 function sttGet(type, d1, d2){
 	$.ajax({
-		url:"${pageContext.request.contextPath}/admin/menu03_01InfoGet/"+type+"/"+d1+"/"+d2,
+		url:"${pageContext.request.contextPath}/admin/menu02_01InfoGet/"+type+"/"+d1+"/"+d2,
 		type:"get",
 		contentType : "application/json; charset=UTF-8",
 		dataType:"json",
@@ -140,6 +140,7 @@ $(function(){
 							</div>
 							<table class="main_board">
 								<colgroup>
+									<col width="20%">
 									<col width="18%">
 									<col width="*">
 									<col width="25%">
@@ -147,6 +148,7 @@ $(function(){
 									<col width="13%">
 								</colgroup>
 								<tr>
+									<th>회사명</th>
 									<th>이름</th>
 									<th>연락처</th>
 									<th>예산</th>
@@ -160,6 +162,7 @@ $(function(){
 										<c:set var="num" value="${pageMaker.totalCount - ((pageMaker.cri.page -1) *10)}"></c:set>
 									        <c:forEach var="item" items="${list}">
 												<tr class="cont">
+													<td class="b_id">${item.cmp_name}</td>
 													<td class="b_id"><a href="${pageContext.request.contextPath}/admin/menu01_01update?page=1&perPageNum=10&searchType&keyword&no=${item.no}">${item.name}</a></td>
 													<td class="b_id"><a href="${pageContext.request.contextPath}/admin/menu01_01update?page=1&perPageNum=10&searchType&keyword&no=${item.no}">${item.cmp_phone}</a></td>
 													<td class="b_id">${item.budget}</td>

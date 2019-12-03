@@ -20,7 +20,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.webaid.domain.AdviceVO;
+import com.webaid.domain.StatisticVO;
 import com.webaid.service.AdviceService;
+import com.webaid.service.StatisticService;
 
 /**
  * Handles requests for the application home page.
@@ -32,6 +34,9 @@ public class HomeController {
 	
 	@Autowired
 	private AdviceService aService;
+	
+	@Autowired
+	private StatisticService sService;
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(HttpServletRequest req, Model model) {
@@ -60,6 +65,25 @@ public class HomeController {
 				
 			return "main/index";
 		}		
+	}
+	
+	@RequestMapping(value="/statisticRegister", method=RequestMethod.POST)
+	public ResponseEntity<String> statisticRegister(@RequestBody Map<String, String> info){
+		logger.info("statistic register");
+		ResponseEntity<String> entity = null;
+		
+		StatisticVO vo = new StatisticVO();
+		vo.setDate(info.get("date"));
+		vo.setDayofweek(info.get("dayofweek"));
+		vo.setHour(Integer.parseInt(info.get("hour")));
+		vo.setMinute(Integer.parseInt(info.get("minute")));
+		vo.setBrowser(info.get("browser"));
+		vo.setOs(info.get("os"));
+		vo.setPrev_url(info.get("prev_url"));
+		
+		sService.insert(vo);
+		entity = new ResponseEntity<String>("ok", HttpStatus.OK);
+		return entity;
 	}
 	
 	@RequestMapping(value = "/adviceRegister", method = RequestMethod.POST)

@@ -29,76 +29,7 @@ textarea {
 </style>
 <script>
 $(function(){
-	var getMail = "${item.email}".split("@");
-	$("#email1").val(getMail[0]);
-	$("#email2").val(getMail[1]);
-	$("#mailcode > option[value='"+getMail[1]+"']").prop("selected", true);
 	
-	var getState = "${item.state}";
-	$("#state > option[value='"+getState+"']").prop("selected", true);
-	
-	var getSecret = "${item.secret}";
-	$(".secret[value='"+getSecret+"']").prop("checked", "checked");
-	
-	var ndate = new Date();
-	var year = ndate.getFullYear();
-	var month = ndate.getMonth()+1;
-	var date = ndate.getDate();
-	month = (month > 9) ? month+"":"0"+month;
-	date = (date > 9) ? date+"":"0"+date;
-	
-	$("#mailcode").change(function(){
-		var codee = $(this).val();
-		$("#email2").val(codee);
-	});	
-	
-	$("#form1").submit(function(){
-		var email1 = $("#email1").val();
-		var email2 = $("#email2").val();
-		var email = email1+"@"+email2; 
-		$("#email").val(email);
-
-		var urlArr = $(this).prop("action").split("keyword=");
-		var keyword = encodeURIComponent(urlArr[1]);
-		var no = $("input[name='no']").val();
-		var target = urlArr[0]+"keyword="+keyword+"&no="+no;
-		$(this).prop("action", target);
-		
-	});
-	
-	$("#state").change(function(){
-		var changeState = $(this).val();
-		if(changeState == "상담완료"){
-			$("input[name='reply_date']").val(year+"-"+month+"-"+date);
-		}
-	});
-	
-	$(document).on("click", "#downBtn", function(e){
-		e.preventDefault();
-		var href = $(this).prop("href");
-		var f_origin = $("input[name='upload_origin']").val();
-		var fileName = encodeURIComponent(f_origin);
-		var f_stored = $("input[name='upload_stored']").val();
-		var downName =  encodeURIComponent(f_stored);
-		
-		href += "&fileName="+fileName+"&downName="+downName;
-		location.href= href;
-	});
-	
-	$("#delBtn").click(function(){
-		var no = $("input[name='no']").val();
-		
-		$.ajax({
-			url:"${pageContext.request.contextPath}/admin/menu01_01delete/"+no,
-			type:"get",
-			dataType:"text",
-			async:false,
-			success:function(json){
-				location.href="${pageContext.request.contextPath}/admin/menu01_01";
-			} 
-		});
-		
-	});
 });
 </script>
 </head>
@@ -137,88 +68,30 @@ $(function(){
 									<col width="*">
 								</colgroup>
 								<tr class="cont">
-									<td class="title">상담자</td>
-									<td><input type="text" class="w_form_s" name="name" id="name" value="${item.name}"></td>
+									<td class="title">담당자명</td>
+									<td>${item.name}</td>
 								</tr>
 								<tr class="cont">
 									<td class="title">휴대전화</td>
-									<td><input type="text" class="w_form_m" name="phone" id="phone" value="${item.phone}" maxlength="13"></td>
+									<td>${item.cmp_phone}</td>
 								</tr>
 								<tr class="cont">
-									<td class="title">이메일</td>
+									<td class="title">기업명</td>
+									<td>${item.cmp_name}</td>
+								</tr>
+								<tr class="cont">
+									<td class="title">부서명</td>
+									<td>${item.cmp_dept}</td>
+								</tr>
+								<tr class="cont">
+									<td class="title">예산</td>
+									<td>${item.budget}</td>
+								</tr>
+								<tr class="cont">
+									<td class="title">의뢰내용</td>
 									<td>
-										<input type="hidden" name="email" id="email" value="${item.email}">
-										<input type="text" class="w_form_s" name="email1" id="email1" value=""> @&nbsp;
-										<input type="text" class="w_form_s" name="email2" id="email2" value="">
-										<select name="emailcode" id="mailcode" class="search_sel">
-											<option value="">직접입력</option>
-											<option value="naver.com">naver.com</option>
-											<option value="daum.net">daum.net</option>
-											<option value="gmail.com">gmail.com</option>
-											<option value="yahoo.co.kr">yahoo.co.kr</option>
-											<option value="yahoo.com">yahoo.com</option>
-											<option value="nate.com">nate.com</option>
-											<option value="paran.com">paran.com</option>
-											<option value="google.com">google.com</option>
-											<option value="empas.com">empas.com</option>
-											<option value="hotmail.com">hotmail.com</option>
-											<option value="msn.com">msn.com</option>
-											<option value="korea.com">korea.com</option>
-											<option value="dreamwiz.com">dreamwiz.com</option>
-											<option value="hanafos.com">hanafos.com</option>
-											<option value="freechal.com">freechal.com</option>
-											<option value="chol.com">chol.com</option>
-											<option value="empal.com">empal.com</option>
-											<option value="lycos.com">lycos.com</option>
-											<option value="netian.com">netian.com</option>
-										</select>
+										<textarea name="content" id="content" cols="120" rows="8" class="w_form_txtArea" readonly="readonly">${item.content}</textarea>
 									</td>
-								</tr>
-								<tr class="cont">
-									<td class="title">처리상태</td>
-									<td>
-										<select name="state" id="state" class="search_sel">
-											<option value="상담예정">상담예정</option>
-											<option value="상담진행">상담진행</option>
-											<option value="상담완료">상담완료</option>
-											<option value="기타">기타</option>
-										</select>
-									</td>
-								</tr>
-								<tr class="cont">
-									<td class="title">비밀글</td>
-									<td>
-										<label><input type="radio" name="secret" class="secret" value="o">예</label>&nbsp;&nbsp;&nbsp;&nbsp;
-										<label><input type="radio" name="secret" class="secret" value="x">아니오</label>&nbsp;&nbsp;&nbsp;&nbsp;
-									</td>
-								</tr>
-								<tr class="cont">
-									<td class="title">제목</td>
-									<td><input type="text" class="w_form_l" name="title" id="title" value="${item.title}"></td>
-								</tr>
-								<tr class="cont">
-									<td class="title">문의내용</td>
-									<td>
-										<textarea name="content" id="content" cols="120" rows="8" class="w_form_txtArea">${item.content}</textarea>
-									</td>
-								</tr>
-								<tr class="cont">
-									<td class="title">상담내용</td>
-									<td>
-										<textarea name="reply" id="reply" cols="120" rows="8" class="w_form_txtArea">${item.reply}</textarea>
-									</td>
-								</tr>
-								<tr class="cont">
-									<td class="title">메모</td>
-									<td><textarea name="memo" id="memo" cols="120" rows="8" class="w_form_txtArea">${item.memo}</textarea></td>
-								</tr>
-								<tr class="cont">
-									<td class="title">답변일</td>
-									<td>${item.reply_date}<input type="hidden" name="reply_date" value="${item.reply_date}"></td>
-								</tr>
-								<tr class="cont">
-									<td class="title">경로</td>
-									<td>${item.access_url}</td>
 								</tr>
 							</table>
 							
@@ -230,9 +103,6 @@ $(function(){
 							</p>
 				
 							<p class="btn_right">
-								<input type="submit" class="btn_black" value="수정">
-				
-								<button type="button" class="btn_red" id="delBtn">삭제</button>
 								<button type="button" class="btn_gray" onclick="">취소</button>
 							</p>
 						</div>

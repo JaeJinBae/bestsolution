@@ -18,26 +18,7 @@
 
 </style>
 <script>
-function advice_register(info){
-	$.ajax({
-		url:"${pageContext.request.contextPath}/adviceRegister",
-		type: "post",
-		data:JSON.stringify(info),
-		async:false,
-		contentType : "application/json; charset=UTF-8",
-		dataType:"text",
-		success:function(json){
-			if(json == "ok"){
-				
-			}else{
-				alert("문의글 등록이 정상적으로 등록되지 않았습니다. 새로고침(F5) 후 다시 이용하세요.");
-			}
-		},
-		error:function(request,status,error){
-			console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
-		}
-	});
-}
+
 
 $(function(){
 	$(".menu_wrap > .gnb_wrap > .gnb").hover(function(){

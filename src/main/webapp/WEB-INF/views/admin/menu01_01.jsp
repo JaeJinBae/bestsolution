@@ -23,21 +23,7 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/admin/js/function.validate.js"></script><!-- # 필수 함수 -->
 <link href="https://ajax.googleapis.com/ajax/static/modules/gviz/1.0/core/tooltip.css" rel="stylesheet" type="text/css">
 <style>
-.access_url_wrap{
-	position: relative;
-}
-.access_url_wrap > span{
-	cursor: pointer;
-}
-.access_url_wrap > p{
-	display: none;
-	position: absolute;
-	bottom: 0;
-	right:0;
-	padding: 25px 15px;
-	background: #efefef;
-	border: 1px solid gray;
-}
+
 </style>
 <script>
 $(function(){
@@ -49,60 +35,12 @@ $(function(){
 		location.href="${pageContext.request.contextPath}/admin/menu01_01${pageMaker.makeQuery(1)}&searchType="+searchType+"&keyword="+keyword;
 	});
 	
-	$("#btn_withdraw").click(function(){
-		
-		$(".sel_chkbox:checked").each(function(){
-			$.ajax({
-				url:"${pageContext.request.contextPath}/admin/menu04_02withdraw/"+$(this).val()+"/x",
-				type:"get",
-				contentType : "application/json; charset=UTF-8",
-				dataType:"text",
-				async:false,
-				success:function(json){
-					console.log(json);
-				},
-				error:function(request,status,error){
-					console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
-				}
-			});
-		});
-		location.href="${pageContext.request.contextPath}/admin/menu04_02";
-	});
-	
-	$("#btn_delete").click(function(){
-		
-		$(".sel_chkbox:checked").each(function(){
-			$.ajax({
-				url:"${pageContext.request.contextPath}/admin/menu04_02delete/"+$(this).val(),
-				type:"get",
-				contentType : "application/json; charset=UTF-8",
-				dataType:"text",
-				async:false,
-				success:function(json){
-					console.log(json);
-				},
-				error:function(request,status,error){
-					console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
-				}
-			});
-		});
-		location.href="${pageContext.request.contextPath}/admin/menu04_02";
-	});
-	
 	$(document).on("click", ".t_link", function(e){
 		e.preventDefault();
 		var link = $(this).prop("href").split("&");
 		var k = link[3].split("=");
 		var keyword = encodeURIComponent(k[1]);
 		location.href=link[0]+"&"+link[1]+"&"+link[2]+"&keyword="+keyword+"&"+link[4];
-	});
-	
-	$(document).on("click", ".access_url_wrap > span", function(){
-		$(".access_url_wrap > p").css("display","none");
-		$(this).parent().find("p").css("display","block");
-	});
-	$(document).on("mouseout", ".access_url_wrap > p", function(){
-		$(this).css("display","none");
 	});
 	
     $(document).on("click", ".board_paging > a",function(e){
@@ -166,17 +104,21 @@ $(function(){
 									<col width="9%">
 									<col width="8%">
 									<col width="13%">
+									<col width="13%">
+									<col width="13%">
 								</colgroup>
 								<tr class="cont">
 									<th><input type="checkbox" id="selectall"></th>
 									<th>번호</th>
 									<th>이름</th>
 									<th>전화번호</th>
+									<th>회사명</th>
+									<th>예산</th>
 									<th>등록일</th>
 								</tr>
 								<c:choose>
 									<c:when test="${fn:length(list) ==0 }">
-										<tr><td colspan="7">등록된 게시물이 없습니다.</td></tr>
+										<tr><td colspan="9">등록된 게시물이 없습니다.</td></tr>
 									</c:when>
 									<c:otherwise>
 										<c:set var="num" value="${pageMaker.totalCount - ((pageMaker.cri.page -1) *10)}"></c:set>
@@ -189,6 +131,8 @@ $(function(){
 														<img src="${pageContext.request.contextPath}/resources/admin/img/20160111_EED6ADF963C23563.gif" class="vimg" alt="비밀글아이콘">
 													</td>
 													<td><a class="t_link" href="${pageContext.request.contextPath}/admin/menu01_01update${pageMaker.makeSearch(pageMaker.cri.page)}&no=${item.no}">${item.cmp_phone}</a></td>
+													<td>${item.cmp_name}</td>
+													<td>${item.budget}</td>
 													<td>${item.regdate}</td>
 												</tr>
 												<c:set var="num" value="${num-1}"></c:set>	
