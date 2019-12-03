@@ -8,17 +8,13 @@
 		select * from advice where no=#{no}
 	</select>
 	
-	<select id="selectNonComplete" resultType="AdviceVO">
-		select * from advice where state!='상담완료' order by no desc
+	<select id="selectTopFive" resultType="AdviceVO">
+		select * from advice order by no desc limit 5
 	</select>
 	
 	<insert id="insert">
-		insert into advice values(0, #{name}, #{phone}, #{regdate}, #{email}, #{state}, #{secret}, #{pw}, #{title}, #{content}, #{reply}, #{memo}, #{access_url}, #{reply_date})
+		insert into advice values(0, #{name}, #{cmp_name}, #{cmp_dept}, #{cmp_phone}, #{budget}, #{content}, #{regdate})
 	</insert>
-	
-	<update id="update">
-		update advice set name=#{name}, phone=#{phone}, email=#{email}, state=#{state}, secret=#{secret}, title=#{title}, content=#{content}, reply=#{reply}, reply_date=#{reply_date}, memo=#{memo} where no=#{no}
-	</update>
 	
 	<delete id="delete">
 		delete from advice where no=#{no}

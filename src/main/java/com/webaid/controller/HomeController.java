@@ -1,15 +1,26 @@
 package com.webaid.controller;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Map;
+
 import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.mobile.device.Device;
 import org.springframework.mobile.device.DeviceUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.webaid.domain.AdviceVO;
+import com.webaid.service.AdviceService;
 
 /**
  * Handles requests for the application home page.
@@ -18,6 +29,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class HomeController {
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
+	
+	@Autowired
+	private AdviceService aService;
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(HttpServletRequest req, Model model) {
@@ -48,6 +62,35 @@ public class HomeController {
 		}		
 	}
 	
+	@RequestMapping(value = "/adviceRegister", method = RequestMethod.POST)
+	public ResponseEntity<String> adviceRegister(@RequestBody Map<String, String> info, Model model) {
+		logger.info("advice register");
+		ResponseEntity<String> entity = null;
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+
+        Calendar c1 = Calendar.getInstance();
+        
+        String today = sdf.format(c1.getTime());
+        
+		AdviceVO vo = new AdviceVO();
+		vo.setName(info.get("name"));
+		vo.setCmp_name(info.get("cmp_name"));
+		vo.setCmp_phone(info.get("cmp_phone"));
+		vo.setCmp_dept(info.get("cmp_dept"));
+		vo.setBudget(info.get("budget"));
+		vo.setContent(info.get("content"));
+		vo.setRegdate(today);
+		
+		try {
+			aService.insert(vo);
+			entity = new ResponseEntity<String>("ok", HttpStatus.OK);
+		} catch (Exception e) {
+			entity = new ResponseEntity<String>("no", HttpStatus.OK);
+		}
+		
+		return entity;
+	}
 	
 	@RequestMapping(value = "/menu01_01", method = RequestMethod.GET)
 	public String menu01_01(HttpServletRequest req, Model model) {

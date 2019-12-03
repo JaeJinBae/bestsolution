@@ -21,18 +21,13 @@ public class AdviceServiceImpl implements AdviceService {
 	}
 
 	@Override
-	public List<AdviceVO> selectNonComplete() {
-		return dao.selectNonComplete();
+	public List<AdviceVO> selectTopFive() {
+		return dao.selectTopFive();
 	}
 
 	@Override
 	public void insert(AdviceVO vo) {
 		dao.insert(vo);
-	}
-
-	@Override
-	public void update(AdviceVO vo) {
-		dao.update(vo);
 	}
 
 	@Override

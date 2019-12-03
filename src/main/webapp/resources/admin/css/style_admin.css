@@ -128,7 +128,7 @@ button {font-size: 12px;}
 #wrap .login_area{ position:relative; width:372px; height:auto; padding-top:162px; margin:0 auto;}
 #wrap .login_area .title { position:relative; width:100%; color:#fff; font-size:47px; text-align:center; margin-bottom:36px;}
 #wrap .login_area .form_area { position:relative; width:100%; height:auto; background-color:#F6F6F6; }
-#wrap .login_area .form_area .logo { position:relative; height:143px; border-bottom:2px solid #1DBCEE;	}
+#wrap .login_area .form_area .logo { position:relative; height:55px; border-bottom:2px solid #1DBCEE;	}
 #wrap .login_area .form_area .form_wrap { position:relative; width:207px; height:auto;  margin:0 auto; padding:50px 0;}
 #wrap .login_area .form_area .form_wrap .id_area {}
 #wrap .login_area .form_area .form_wrap .id_area .tt { color:#444; font-size:13px; padding-bottom:9px; display: block}

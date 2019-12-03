@@ -18,6 +18,27 @@
 
 </style>
 <script>
+function advice_register(info){
+	$.ajax({
+		url:"${pageContext.request.contextPath}/adviceRegister",
+		type: "post",
+		data:JSON.stringify(info),
+		async:false,
+		contentType : "application/json; charset=UTF-8",
+		dataType:"text",
+		success:function(json){
+			if(json == "ok"){
+				
+			}else{
+				alert("문의글 등록이 정상적으로 등록되지 않았습니다. 새로고침(F5) 후 다시 이용하세요.");
+			}
+		},
+		error:function(request,status,error){
+			console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+		}
+	});
+}
+
 $(function(){
 	$(".menu_wrap > .gnb_wrap > .gnb").hover(function(){
 		$(this).find(".lnb_wrap").stop().fadeIn(100);
@@ -25,6 +46,35 @@ $(function(){
 	},function(){
 		$(this).find(".lnb_wrap").stop().fadeOut(100);
 		console.log("hover out");
+	});
+	
+	$("#submit_btn").click(function(){
+		var cmp_name = $("input[name='cmp_name']").val();
+		var cmp_dept = $("input[name='cmp_dept']").val();
+		var name = $("input[name='name']").val();
+		var cmp_phone = $("input[name='cmp_phone']").val();
+		var budget = $("input[name='budget']").val();
+		var content = $("textarea[name='content']").val();
+		
+		if(cmp_name == ""){
+			alert("기업명을 입력해주세요.");
+			return false;
+		}
+		if(name==""){
+			alert("담당자명을 입력해주세요.");
+			return false;
+		}
+		if(cmp_phone==""){
+			alert("연락처를 입력해주세요.");
+			return false;
+		}
+		if(content == ""){
+			alert("의뢰내용을 입력해주세요.");
+			return false;
+		}
+		
+		var info = {"cmp_name":cmp_name, "cmp_dept":cmp_dept, "name":name, "cmp_phone":cmp_phone, "budget":budget, "content":content};
+		advice_register(info);
 	});
 });
 </script>
@@ -117,11 +167,11 @@ $(function(){
 							회사는 원활한 개인정보 업무처리를 위하여 다음과 같이 개인정보 처리 업무를 위탁하고 있습니다. 위탁 계약 시 개인정보가 안전하게 보호될 수 있도록 필요한 사항을 규정해 관련 법규를 준수하고 이를 감독하고 있습니다. 위탁하는 업무의 변경이 발생할 경우 웹사이트의 공지사항을 통해 안내 드리겠습니다.</div>
 						</div>
 						<div class="form_left">
-							<p><span>기업명</span> <input type="text" name="company"></p>
-							<p><span>부서명</span> <input type="text"></p>
-							<p><span>담당자명</span> <input type="text"></p>
-							<p><span>연락처</span> <input type="text"></p>
-							<p><span>예산</span> <input type="text"></p>
+							<p><span>기업명<span style="color:red;">*</span></span> <input type="text" name="cmp_name"></p>
+							<p><span>부서명</span> <input type="text" name="cmp_dept"></p>
+							<p><span>담당자명<span style="color:red;">*</span></span> <input type="text" name="name"></p>
+							<p><span>연락처<span style="color:red;">*</span></span> <input type="text" name="cmp_phone"></p>
+							<p><span>예산</span> <input type="text" name="budget"></p>
 						</div><!-- form_left end -->
 						<div class="form_right">
 							<textarea name="content" placeholder="의뢰 내용"></textarea>

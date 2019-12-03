@@ -7,9 +7,8 @@ import com.webaid.domain.SearchCriteria;
 
 public interface AdviceService {
 	public AdviceVO selectOne(int no);
-	public List<AdviceVO> selectNonComplete();
+	public List<AdviceVO> selectTopFive();
 	public void insert(AdviceVO vo);
-	public void update(AdviceVO vo);
 	public void delete(int no);
 	public List<AdviceVO> listSearch(SearchCriteria cri);
 	public int listSearchCount(SearchCriteria cri);

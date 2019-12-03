@@ -23,8 +23,8 @@ public class AdviceDaoImpl implements AdviceDao {
 	}
 
 	@Override
-	public List<AdviceVO> selectNonComplete() {
-		return session.selectList(namespace + ".selectNonComplete");
+	public List<AdviceVO> selectTopFive() {
+		return session.selectList(namespace + ".selectTopFive");
 	}
 
 	@Override
@@ -32,11 +32,6 @@ public class AdviceDaoImpl implements AdviceDao {
 		session.insert(namespace + ".insert", vo);
 	}
 
-	@Override
-	public void update(AdviceVO vo) {
-		session.update(namespace + ".update", vo);
-	}
-	
 	@Override
 	public void delete(int no) {
 		session.delete(namespace + ".delete", no);
@@ -46,9 +41,10 @@ public class AdviceDaoImpl implements AdviceDao {
 	public List<AdviceVO> listSearch(SearchCriteria cri) {
 		return session.selectList(namespace + ".listSearch", cri);
 	}
-	
+
 	@Override
 	public int listSearchCount(SearchCriteria cri) {
 		return session.selectOne(namespace + ".listSearchCount", cri);
 	}
+
 }
