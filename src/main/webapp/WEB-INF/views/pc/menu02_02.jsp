@@ -21,8 +21,11 @@
 .top_title{
 	width: 100%;
 	text-align: center;
-	background: #eaeaea;
+	background: url("${pageContext.request.contextPath}/resources/img/content/digital_top_bg.jpg") no-repeat;
+	background-size:cover;
+	background-position: bottom;
 	padding: 70px 0;
+	color: #ffffff;
 }
 .line_vertical{
 	width: 2px;

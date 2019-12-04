@@ -21,7 +21,9 @@
 .top_title{
 	width: 100%;
 	text-align: center;
-	background: #eaeaea;
+	background: url("${pageContext.request.contextPath}/resources/img/content/media_top_bg.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
 	padding: 70px 0;
 }
 .line_vertical{
@@ -89,6 +91,7 @@
 	text-align: center;
 	font-size: 30px;
 	vertical-align: middle;
+	padding-top: 45px;
 }
 </style>
 <script>
@@ -166,3 +169,5 @@
 	</div><!-- all_wrap end -->
 </body>
 </html>
+
+<p style="text-align:center"><img alt="" src="/resources/uploadEvent/f6326ff5-0f5e-49fa-affb-b8035a50f4ca_2019winter02.jpg" style="width:1170px"><img alt="" src="/resources/uploadEvent/68356cc6-49b6-417c-b615-1b12fcd1059c_2019winter03.jpg" style="width:1170px"><img alt="" src="/resources/uploadEvent/5aec3d8d-4e7a-4fea-a84e-1afd8ee344ea_2019winter04.jpg" style="width:1170px"><img alt="" src="/resources/uploadEvent/31991942-7383-4260-9c33-635d98d078c9_2019winter05.jpg" style="width:1170px" usemap="#imgmap"><map id="imgmap" name="imgmap"><area alt="드림패키지 자세히보기" coords="748,1253,1073,1324" href="/menu04_02" shape="rect" target="" title=""> <area alt="프리미엄토닝 자세히보기" coords="752,1529,1075,1600" href="/menu04_06" shape="rect" target="" title=""></map><img alt="" src="/resources/uploadEvent/036eafc5-289c-419a-b137-cee0e67b29c3_2019winter06.jpg" style="width:1170px"><a href="http://www.danielps.co.kr/menu05_01"><img alt="" src="/resources/uploadEvent/32c7a67e-3d50-43fc-b54e-d7a3a16fa2b5_2019winter07.jpg" style="width:1170px"></a><img alt="" src="/resources/uploadEvent/a757c732-7f29-4480-bec3-2672d17a05c6_2019winter01.jpg" style="width:1170px"></p>
