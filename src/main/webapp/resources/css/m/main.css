@@ -94,7 +94,6 @@
 	padding: 50px 0; 
 }
 .sec3{
-	background: #aaa;
 	height: auto;
 	text-align: center;
 }
@@ -108,6 +107,7 @@
 	line-height: 25px;
 	color: #555555;
 	text-align: center;
+	padding-bottom: 50px;
 }
 .sec4{
 	height: auto;

@@ -16,7 +16,9 @@
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=939c592a22900ccd6ad53604071e06bb&libraries=drawing"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, viewport-fit=cover">
 <style>
-
+.sec3{
+	background: url("${pageContext.request.contextPath}/resources/img/main/main_vision_bg.png") repeat-y;
+}
 </style>
 <script>
 $(function(){
@@ -105,7 +107,7 @@ $(function(){
 				<div class="inner">
 					<div class="line_vertical"></div>
 					<h4 class="sec_title">VISION</h4>
-					<img src="${pageContext.request.contextPath}/resources/img/main/tit_vision.png">
+					<img src="${pageContext.request.contextPath}/resources/img/main/main_vision_tit2.png">
 					<h3>
 						차이는 나와 너를 구분 짓는 힘.<br>
 						차이는 나의 생각과 세상의 생각을 구분 짓는 힘.<br>

@@ -22,7 +22,7 @@
 .top_title{
 	width: 100%;
 	text-align: center;
-	background: #eaeaea;
+	background: #efede5;
 	padding: 70px 0;
 }
 .line_vertical{
@@ -124,7 +124,7 @@
 						'창의와 자율', '인간 중시', '능력 발휘 극대화', '성과주의'가 인사제도의 기본 전제입니다.
 					</h3>
 					<div class="career01">
-						<img src="${pageContext.request.contextPath}/resources/img/content/img_careers01.jpg">
+						<img src="${pageContext.request.contextPath}/resources/img/content/career_img1.png">
 					</div>
 					<div class="career02">
 						<ul class="list-num">

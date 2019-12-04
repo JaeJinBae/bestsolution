@@ -21,6 +21,10 @@
 .box_active{
 	color: #fff;
 }
+.sec3{
+	background: url("${pageContext.request.contextPath}/resources/img/main/main_vision_bg.png") repeat-y;
+	background-size: cover;
+}
 </style>
 <script>
 $(function(){
@@ -143,7 +147,7 @@ $(function(){
 				<div class="inner">
 					<div class="line_vertical"></div>
 					<h4 class="sec_title">VISION</h4>
-					<img src="${pageContext.request.contextPath}/resources/img/main/tit_vision.png">
+					<img src="${pageContext.request.contextPath}/resources/img/main/main_vision_tit2.png">
 					<h3>
 						차이는 나와 너를 구분 짓는 힘.<br>
 						차이는 나의 생각과 세상의 생각을 구분 짓는 힘.<br>

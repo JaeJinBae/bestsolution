@@ -102,7 +102,6 @@ body{
 	padding-top: 50px; 
 }
 .sec3{
-	background: #aaa;
 	height: auto;
 }
 .sec3 > .inner > img{
@@ -112,6 +111,7 @@ body{
 	font-size: 27px;
 	line-height: 35px;
 	color: #555555;
+	margin-bottom: 30px;
 }
 .sec4{
 	height: auto;

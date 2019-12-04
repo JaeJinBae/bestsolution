@@ -22,6 +22,32 @@
 	font-size: 40px;
 	line-height: 60px;
 }
+.sec1{
+	background: url("${pageContext.request.contextPath}/resources/img/content/overview_sec1_bg.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.sec2{
+	background: url("${pageContext.request.contextPath}/resources/img/content/overview_sec2_bg.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.sec2 .inner_slogan{
+	color: #ffffff;
+}
+.sec3{
+	background: url("${pageContext.request.contextPath}/resources/img/content/overview_sec3_bg.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.sec3 .inner_slogan{
+	color: #ffffff;
+}
+.sec4{
+	background: url("${pageContext.request.contextPath}/resources/img/content/overview_sec4_bg.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
 </style>
 <script>
 
@@ -49,7 +75,7 @@
 				<div class="inner">
 					<h2 class="inner_slogan">
 						베스트 솔루션은 오늘날 우리니라 광고 크리에이티비티<br>
-						역사에 획을 그으며 명서응ㄹ 떨치기 위해 지금 이 순간도<br>
+						역사에 획을 그으며 명성을 떨치기 위해 지금 이 순간도<br>
 						노력중이며, 다양한 사업 분야에서 차별화된 조직과<br>
 						시스템으로 운영하고 있습니다.<br>
 					</h2>
