@@ -15,11 +15,14 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/common.js"></script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=939c592a22900ccd6ad53604071e06bb&libraries=drawing"></script>
 <style>
-
+.box_img2{
+	display: none;
+}
+.box_active{
+	color: #fff;
+}
 </style>
 <script>
-
-
 $(function(){
 	$(".menu_wrap > .gnb_wrap > .gnb").hover(function(){
 		$(this).find(".lnb_wrap").stop().fadeIn(100);
@@ -27,6 +30,18 @@ $(function(){
 	},function(){
 		$(this).find(".lnb_wrap").stop().fadeOut(100);
 		console.log("hover out");
+	});
+	
+	$(".box_content").hover(function(){
+		$(this).css("background","#005188");
+		$(this).find("a").addClass("box_active");
+		$(this).find("a > .box_img1").css("display", "none");
+		$(this).find("a > .box_img2").css("display", "inline");
+	},function(){
+		$(this).css("background","none");
+		$(this).find("a").removeClass("box_active");
+		$(this).find("a > .box_img1").css("display", "inline");
+		$(this).find("a > .box_img2").css("display", "none");
 	});
 	
 	$("#submit_btn").click(function(){
@@ -76,34 +91,49 @@ $(function(){
 					<h2>Big idea for improving Your brand value.</h2>
 					<div class="box_wrap">
 						<div class="box_content">
-							<img src="${pageContext.request.contextPath}/resources/img/main/main_account.png">
-							<div class="line"></div>
-							<p class="box_title">ACCOUNT</p>
-							<p class="box_txt">브랜드의 문제를 진단하고<br>명쾌한 솔루션을 제시합니다.</p>
+							<a href="${pageContext.request.contextPath}/menu02_01">
+								<img class="box_img1" src="${pageContext.request.contextPath}/resources/img/main/main_account.png">
+								<img class="box_img2" src="${pageContext.request.contextPath}/resources/img/main/main_account_white.png">
+								<div class="line"></div>
+								<p class="box_title">ACCOUNT</p>
+								<p class="box_txt">브랜드의 문제를 진단하고<br>명쾌한 솔루션을 제시합니다.</p>
+							</a>
 						</div>
 						<div class="box_content">
-							<img src="${pageContext.request.contextPath}/resources/img/main/main_digital.png">
-							<div class="line"></div>
-							<p class="box_title">DIGITAL</p>
-							<p class="box_txt">디지털 접점에서 고객에게 최고의<br>브랜드 경험을 제공합니다.</p>
+							<a href="${pageContext.request.contextPath}/menu02_01">
+								<img class="box_img1" src="${pageContext.request.contextPath}/resources/img/main/main_digital.png">
+								<img class="box_img2" src="${pageContext.request.contextPath}/resources/img/main/main_digital_white.png">
+								<div class="line"></div>
+								<p class="box_title">DIGITAL</p>
+								<p class="box_txt">디지털 접점에서 고객에게 최고의<br>브랜드 경험을 제공합니다.</p>
+							</a>
 						</div>
 						<div class="box_content">
-							<img src="${pageContext.request.contextPath}/resources/img/main/main_media.png">
-							<div class="line"></div>
-							<p class="box_title">MEDIA</p>
-							<p class="box_txt">강력한 Man-Power를 통해<br>Media Service를 제공합니다.</p>
+							<a href="${pageContext.request.contextPath}/menu02_01">
+								<img class="box_img1" src="${pageContext.request.contextPath}/resources/img/main/main_media.png">
+								<img class="box_img2" src="${pageContext.request.contextPath}/resources/img/main/main_media_white.png">
+								<div class="line"></div>
+								<p class="box_title">MEDIA</p>
+								<p class="box_txt">강력한 Man-Power를 통해<br>Media Service를 제공합니다.</p>
+							</a>
 						</div>
 						<div class="box_content">
-							<img src="${pageContext.request.contextPath}/resources/img/main/main_passion.png">
-							<div class="line"></div>
-							<p class="box_title">PASSION</p>
-							<p class="box_txt">브랜드를 살아 숨쉬게 하는 열정으로<br>창의적인 아이디어를 제공합니다.</p>
+							<a href="${pageContext.request.contextPath}/menu02_01">
+								<img class="box_img1" src="${pageContext.request.contextPath}/resources/img/main/main_passion.png">
+								<img class="box_img2" src="${pageContext.request.contextPath}/resources/img/main/main_passion_white.png">
+								<div class="line"></div>
+								<p class="box_title">PASSION</p>
+								<p class="box_txt">브랜드를 살아 숨쉬게 하는 열정으로<br>창의적인 아이디어를 제공합니다.</p>
+							</a>
 						</div>
 						<div class="box_content">
-							<img src="${pageContext.request.contextPath}/resources/img/main/main_otr.png">
-							<div class="line"></div>
-							<p class="box_title">OTR</p>
-							<p class="box_txt">광고적 상상력으로 제품과<br>브랜드를 변신시켜 드립니다.</p>
+							<a href="${pageContext.request.contextPath}/menu02_01">
+								<img class="box_img1" src="${pageContext.request.contextPath}/resources/img/main/main_otr.png">
+								<img class="box_img2" src="${pageContext.request.contextPath}/resources/img/main/main_otr_white.png">
+								<div class="line"></div>
+								<p class="box_title">OTR</p>
+								<p class="box_txt">광고적 상상력으로 제품과<br>브랜드를 변신시켜 드립니다.</p>
+							</a>
 						</div>
 					</div>
 					<h3>We can make high quality result.</h3>
