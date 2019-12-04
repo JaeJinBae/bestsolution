@@ -68,31 +68,31 @@ $(function(){
 					<h2>Big idea for improving<br>Your brand value.</h2>
 					<div class="box_wrap">
 						<div class="box_content">
-							<img src="${pageContext.request.contextPath}/resources/img/main/">
+							<img src="${pageContext.request.contextPath}/resources/img/main/main_account.png">
 							<div class="line"></div>
 							<p class="box_title">ACCOUNT</p>
 							<p class="box_txt">브랜드의 문제를 진단하고<br>명쾌한 솔루션을 제시합니다.</p>
 						</div>
 						<div class="box_content">
-							<img src="${pageContext.request.contextPath}/resources/img/main/">
+							<img src="${pageContext.request.contextPath}/resources/img/main/main_digital.png">
 							<div class="line"></div>
 							<p class="box_title">DIGITAL</p>
 							<p class="box_txt">디지털 접점에서 고객에게 최고의<br>브랜드 경험을 제공합니다.</p>
 						</div>
 						<div class="box_content">
-							<img src="${pageContext.request.contextPath}/resources/img/main/">
+							<img src="${pageContext.request.contextPath}/resources/img/main/main_media.png">
 							<div class="line"></div>
 							<p class="box_title">MEDIA</p>
 							<p class="box_txt">강력한 Man-Power를 통해<br>Media Service를 제공합니다.</p>
 						</div>
 						<div class="box_content">
-							<img src="${pageContext.request.contextPath}/resources/img/main/">
+							<img src="${pageContext.request.contextPath}/resources/img/main/main_passion.png">
 							<div class="line"></div>
 							<p class="box_title">PASSION</p>
 							<p class="box_txt">브랜드를 살아 숨쉬게 하는 열정으로<br>창의적인 아이디어를 제공합니다.</p>
 						</div>
 						<div class="box_content">
-							<img src="${pageContext.request.contextPath}/resources/img/main/">
+							<img src="${pageContext.request.contextPath}/resources/img/main/main_otr.png">
 							<div class="line"></div>
 							<p class="box_title">OTR</p>
 							<p class="box_txt">광고적 상상력으로 제품과<br>브랜드를 변신시켜 드립니다.</p>

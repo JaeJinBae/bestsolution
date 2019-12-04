@@ -16,7 +16,7 @@ $(function(){
 	var ua = navigator.userAgent.toLowerCase();
     var browser = "";
     var os = "";
-	if(access_url.indexOf("thebestsolution.co.kr") == -1 && access_url.indexOf("bestsolution.cafe24") == -1){
+	if(access_url.indexOf("bestsolution.kr") == -1 && access_url.indexOf("bestsolution.cafe24") == -1){
 		if(access_url.length < 4){
 			access_url="직접 또는 즐겨찾기";
 		}
