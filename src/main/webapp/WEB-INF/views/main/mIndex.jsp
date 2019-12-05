@@ -18,6 +18,7 @@
 <style>
 .sec3{
 	background: url("${pageContext.request.contextPath}/resources/img/main/main_vision_bg.png") repeat-y;
+	background-position: center;
 }
 </style>
 <script>
