@@ -22,7 +22,9 @@
 .top_title{
 	width: 100%;
 	text-align: center;
-	background: #eaeaea;
+	background: url("${pageContext.request.contextPath}/resources/img/content/digital_top_bg.jpg") no-repeat;
+	background-size:cover;
+	background-position: bottom;
 	padding: 50px 0;
 }
 .line_vertical{

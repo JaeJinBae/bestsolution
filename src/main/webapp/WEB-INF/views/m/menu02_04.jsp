@@ -22,7 +22,9 @@
 .top_title{
 	width: 100%;
 	text-align: center;
-	background: #eaeaea;
+	background: url("${pageContext.request.contextPath}/resources/img/content/passion_top_bg2.jpg") no-repeat;
+	background-size: cover;
+	background-position: bottom;
 	padding: 50px 0;
 }
 .line_vertical{
@@ -107,7 +109,7 @@
 						전략적 접근을 가능하게 합니다.<br>
 					</h4>
 					<div class="passion_img01">
-						<img src="${pageContext.request.contextPath}/resources/img/content/">
+						<img src="${pageContext.request.contextPath}/resources/img/content/passion_img1_m.png">
 					</div>
 				</div>
 			</div><!-- sec1 end -->

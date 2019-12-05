@@ -15,7 +15,6 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/m/common.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, viewport-fit=cover">
 <style>
-
 .inner_slogan{
 	width: 90%;
 	position: absolute;
@@ -25,6 +24,32 @@
 	text-align: center;
 	font-size: 20px;
 	line-height: 30px;
+}
+.sec1{
+	background: url("${pageContext.request.contextPath}/resources/img/content/overview_sec1_bg.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.sec2{
+	background: url("${pageContext.request.contextPath}/resources/img/content/overview_sec2_bg.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.sec2 .inner_slogan{
+	color: #ffffff;
+}
+.sec3{
+	background: url("${pageContext.request.contextPath}/resources/img/content/overview_sec3_bg.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.sec3 .inner_slogan{
+	color: #ffffff;
+}
+.sec4{
+	background: url("${pageContext.request.contextPath}/resources/img/content/overview_sec4_bg.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
 }
 </style>
 <script>

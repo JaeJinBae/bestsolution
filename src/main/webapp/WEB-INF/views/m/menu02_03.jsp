@@ -22,7 +22,9 @@
 .top_title{
 	width: 100%;
 	text-align: center;
-	background: #eaeaea;
+	background: url("${pageContext.request.contextPath}/resources/img/content/media_top_bg.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
 	padding: 50px 0;
 }
 .line_vertical{
@@ -120,7 +122,7 @@
 						집행을 보장해 드립니다.<br>
 					</h2>
 					<div class="media_img01">
-						<img src="${pageContext.request.contextPath}/resources/img/content/">
+						<img src="${pageContext.request.contextPath}/resources/img/content/media_img1.png">
 					</div>
 					<div class="line_horizon_full"></div>
 					<h4>SYSTEM POWER</h4>

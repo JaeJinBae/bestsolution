@@ -22,7 +22,9 @@
 .top_title{
 	width: 100%;
 	text-align: center;
-	background: #eaeaea;
+	background: url("${pageContext.request.contextPath}/resources/img/content/account_top_bg.jpg") no-repeat;
+	background-size:cover;
+	background-position: center;
 	padding: 50px 0;
 }
 .line_vertical{
@@ -73,7 +75,7 @@
 	width: 85%;
 	border: 1px solid lightgray;
 	padding: 25px 18px;
-	margin: 0 auto;
+	margin: 15px auto;
 	text-align: center;
 }
 .box_content > img{
@@ -146,7 +148,7 @@
 					</h4>
 					<div class="inner_box_wrap">
 						<div class="box_content">
-							<img src="${pageContext.request.contextPath}/resources/img/main/">
+							<img src="${pageContext.request.contextPath}/resources/img/content/account_icon1.png">
 							<p class="box_title">Account Planning</p>
 							<div class="line"></div>
 							<p class="box_txt">소비자에 대한 통찰(Insight)를 바탕으로 브랜드 진단 및 마케팅 커뮤니케이션 전략 도출</p>
@@ -157,7 +159,7 @@
 							</ul>
 						</div>
 						<div class="box_content">
-							<img src="${pageContext.request.contextPath}/resources/img/main/">
+							<img src="${pageContext.request.contextPath}/resources/img/content/account_icon2.png">
 							<p class="box_title">Customized Planning</p>
 							<div class="line"></div>
 							<p class="box_txt">브랜드의 디지털 활동을 진단하고 현재의 디지털 환경과 트렌드에 맞는 디지털 마케팅 솔루션 제시</p>
@@ -168,7 +170,7 @@
 							</ul>
 						</div>
 						<div class="box_content">
-							<img src="${pageContext.request.contextPath}/resources/img/main/">
+							<img src="${pageContext.request.contextPath}/resources/img/content/account_icon3.png">
 							<p class="box_title">Connect Planning</p>
 							<div class="line"></div>
 							<p class="box_txt">디지털 시대 소비자 구매 의사 결정 과정(CDJ)에서 데이터 분석과 소비자 인사이트 결합을 통한 성과 중심의 캠페인 전략 제안과 실행</p>
