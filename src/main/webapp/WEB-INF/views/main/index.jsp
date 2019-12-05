@@ -24,6 +24,7 @@
 .sec3{
 	background: url("${pageContext.request.contextPath}/resources/img/main/main_vision_bg.png") repeat-y;
 	background-size: cover;
+	background-position: center;
 }
 </style>
 <script>
@@ -104,7 +105,7 @@ $(function(){
 							</a>
 						</div>
 						<div class="box_content">
-							<a href="${pageContext.request.contextPath}/menu02_01">
+							<a href="${pageContext.request.contextPath}/menu02_02">
 								<img class="box_img1" src="${pageContext.request.contextPath}/resources/img/main/main_digital.png">
 								<img class="box_img2" src="${pageContext.request.contextPath}/resources/img/main/main_digital_white.png">
 								<div class="line"></div>
@@ -113,7 +114,7 @@ $(function(){
 							</a>
 						</div>
 						<div class="box_content">
-							<a href="${pageContext.request.contextPath}/menu02_01">
+							<a href="${pageContext.request.contextPath}/menu02_03">
 								<img class="box_img1" src="${pageContext.request.contextPath}/resources/img/main/main_media.png">
 								<img class="box_img2" src="${pageContext.request.contextPath}/resources/img/main/main_media_white.png">
 								<div class="line"></div>
@@ -122,7 +123,7 @@ $(function(){
 							</a>
 						</div>
 						<div class="box_content">
-							<a href="${pageContext.request.contextPath}/menu02_01">
+							<a href="${pageContext.request.contextPath}/menu02_04">
 								<img class="box_img1" src="${pageContext.request.contextPath}/resources/img/main/main_passion.png">
 								<img class="box_img2" src="${pageContext.request.contextPath}/resources/img/main/main_passion_white.png">
 								<div class="line"></div>
@@ -130,15 +131,15 @@ $(function(){
 								<p class="box_txt">브랜드를 살아 숨쉬게 하는 열정으로<br>창의적인 아이디어를 제공합니다.</p>
 							</a>
 						</div>
-						<div class="box_content">
-							<a href="${pageContext.request.contextPath}/menu02_01">
+						<%-- <div class="box_content">
+							<a href="${pageContext.request.contextPath}/menu02_05">
 								<img class="box_img1" src="${pageContext.request.contextPath}/resources/img/main/main_otr.png">
 								<img class="box_img2" src="${pageContext.request.contextPath}/resources/img/main/main_otr_white.png">
 								<div class="line"></div>
 								<p class="box_title">OTR</p>
 								<p class="box_txt">광고적 상상력으로 제품과<br>브랜드를 변신시켜 드립니다.</p>
 							</a>
-						</div>
+						</div> --%>
 					</div>
 					<h3>We can make high quality result.</h3>
 				</div><!-- inner end -->

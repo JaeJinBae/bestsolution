@@ -65,23 +65,23 @@
 	text-align: center;
 	margin-bottom: 25px;
 }
-.box_content > img{
+.box_content > a > img{
 	margin-bottom: 20px;
 }
-.box_content > .line{
+.box_content > a > .line{
 	width: 58%;
 	height: 2px;
 	background: #cccccc;
 	margin: 0 auto;
 }
-.box_content > .box_title{
+.box_content > a > .box_title{
 	width: 100%;
 	text-align: center;
 	font-size: 23px;
 	font-weight: bold;
 	padding: 20px 0;
 }
-.box_content > .box_txt{
+.box_content > a > .box_txt{
 	width: 100%;
 	text-align: center;
 	line-height: 23px;

@@ -21,7 +21,9 @@
 .top_title{
 	width: 100%;
 	text-align: center;
-	background: #eaeaea;
+	background: url("${pageContext.request.contextPath}/resources/img/content/passion_top_bg2.jpg") no-repeat;
+	background-size: cover;
+	background-position: bottom;
 	padding: 70px 0;
 }
 .line_vertical{
@@ -138,7 +140,7 @@
 						소비자를 더 크게 흔들 수 있는 전략적 접근을 가능하게 합니다.<br>
 					</h4>
 					<div class="passion_img01">
-						<img src="${pageContext.request.contextPath}/resources/img/content/">
+						<img src="${pageContext.request.contextPath}/resources/img/content/passion_img1.png">
 					</div>
 				</div>
 			</div><!-- sec1 end -->
