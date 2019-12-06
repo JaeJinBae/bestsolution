@@ -64,6 +64,7 @@
 	font-weight: 500;
 	margin-bottom: 70px;
 	line-height: 37px;
+	font-style: italic;
 }
 
 </style>

@@ -86,7 +86,7 @@ $(function(){
 		<section class="main_container">
 			<div class="section_div sec1">
 				<div class="inner">
-					<h2>BEST SOLUTION</h2>
+					<h2><span style="color:#005188;">B</span>EST <span style="color:#005188;">S</span>OLUTION</h2>
 				</div><!-- inner end -->
 			</div><!-- sec1 end -->
 			<div class="section_div sec2">

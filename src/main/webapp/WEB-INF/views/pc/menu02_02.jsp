@@ -123,7 +123,7 @@
 
 .inner_box4_wrap > .box_content > .box_title{
 	width: 100%;
-	border-bottom: 1px solid #005188;
+	/* border-bottom: 1px solid #005188; */
 	text-align: center;
 	font-size: 23px;
 	font-weight: bold;
@@ -177,11 +177,11 @@
 					</h2>
 					<div class="inner_box3_wrap">
 						<div class="box_content">
-							<p class="box_title">마케팅 실행플랫폼</p>
+							<p class="box_title" style="background: #1fc8db">마케팅 실행플랫폼</p>
 							<p class="box_txt">브랜드 목표, 사용자환경(디바이스, 채널 등)에 적합한 디지털플랫폼 기획과 개발</p>
 						</div>
 						<div class="box_content">
-							<p class="box_title">마케팅 분석플랫폼</p>
+							<p class="box_title" style="background: #2cb5e8">마케팅 분석플랫폼</p>
 							<p class="box_txt">디지털마케팅 채널에서 수집되는 행동데이터를 시각화/분석하는 플랫폼에 대한 설계와 구축</p>
 						</div>
 						<div class="box_content">
@@ -197,19 +197,19 @@
 					</h2>
 					<div class="inner_box4_wrap">
 						<div class="box_content">
-							<p class="box_title">모니터링</p>
+							<p class="box_title" style="background: #3d9889">모니터링</p>
 							<p class="box_txt">주요 온라인 거래선 모니터링</p>
 						</div>
 						<div class="box_content">
-							<p class="box_title">클리닉</p>
+							<p class="box_title" style="background: #16d176">클리닉</p>
 							<p class="box_txt">모니터링 데이터를 기반으로 이커머스 내 트래픽, 컨텐츠, 리뷰 등의 개선활동</p>
 						</div>
 						<div class="box_content">
-							<p class="box_title">마케팅 실행플랫폼</p>
+							<p class="box_title" style="background: #2ac5a6">마케팅 실행플랫폼</p>
 							<p class="box_txt">브랜드 목표, 사용자환경에 적합한 디저털 플랫폼의 기획과 개발</p>
 						</div>
 						<div class="box_content">
-							<p class="box_title">광고집행</p>
+							<p class="box_title" style="background: #63c8d4">광고집행</p>
 							<p class="box_txt">주요 온라인 거래선과의 협업을 통한 광고 집행</p>
 						</div>
 					</div>
@@ -221,15 +221,15 @@
 					</h2>
 					<div class="inner_box3_wrap">
 						<div class="box_content">
-							<p class="box_title">통합 마케팅 전략 수립</p>
+							<p class="box_title" style="background: #ff4c38">통합 마케팅 전략 수립</p>
 							<p class="box_txt">데이터 기반 통합 글로벌 디지털마케팅 전략 및 기획</p>
 						</div>
 						<div class="box_content">
-							<p class="box_title">컨텐츠 제작</p>
+							<p class="box_title" style="background: #e4804c">컨텐츠 제작</p>
 							<p class="box_txt">디지털 채널별 최적화 컨텐츠 기획 및 제작</p>
 						</div>
 						<div class="box_content">
-							<p class="box_title">채널 운영</p>
+							<p class="box_title" style="background: #e46231">채널 운영</p>
 							<p class="box_txt">소비자와 브랜드간 관계 구축 및 강화를 위한 디지털 소비자 접점 채널 운영</p>
 						</div>
 					</div><!-- inner_box3_wrap end -->

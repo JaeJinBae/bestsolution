@@ -14,9 +14,9 @@
 	<!-- 호스팅용 -->	
 	<!-- <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-		<property name="url" value="jdbc:mysql://localhost:3306/priveskin"/>
-		<property name="username" value="priveskin"/>
-		<property name="password" value="priveskin12!"/>
+		<property name="url" value="jdbc:mysql://localhost:3306/bestsolution6181"/>
+		<property name="username" value="bestsolution6181"/>
+		<property name="password" value="bestsolution12!"/>
 	</bean> -->
 	
 	<!-- 개발용 -->
@@ -26,7 +26,6 @@
 		<property name="username" value="root"/>
 		<property name="password" value="rootroot"/>
 	</bean>
-
 	
 	<!-- 로그 찍히게 하는 녀석 -->
 	<!-- <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">

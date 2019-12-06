@@ -57,6 +57,7 @@
 	font-size: 40px;
 	font-weight: bold;
 	margin-bottom: 20px;
+	font-style: italic;
 }
 .inner > h4{
 	font-size: 25px;
