@@ -30,6 +30,9 @@
 					</ul>
 				</li>
 				<li class="gnb">
+					<a href="${pageContext.request.contextPath}/m/menu03_01"><span class="gnb-txt">Portfolio</span></a>
+				</li>
+				<li class="gnb">
 					<a href="${pageContext.request.contextPath}/#contactus"><span class="gnb-txt">Contact Us</span></a>
 				</li>
 			</ul>
