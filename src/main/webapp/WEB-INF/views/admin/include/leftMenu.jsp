@@ -15,6 +15,7 @@ $(function(){
 	<dl>
 		<dt><a href="javascript:;">게시판관리</a></dt>
 		<dd><a href="${pageContext.request.contextPath}/admin/menu01_01">상담관리</a></dd>
+		<dd><a href="${pageContext.request.contextPath}/admin/menu01_02">포트폴리오</a></dd>
 	</dl>
 	<dl>
 		<dt><a href="javascript:;">마케팅분석</a></dt>

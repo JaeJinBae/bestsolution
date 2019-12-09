@@ -42,7 +42,7 @@
 	/* display: inline-block; */
 	width: 250px;
 	height: 300px;
-	border: 1px solid black;
+	border: 1px solid #efefef;
 	float: left;
 	margin-left: 60px;
 	margin-bottom: 60px;

@@ -57,6 +57,9 @@
 	font-size: 13px;
 	line-height: 23px;
 }
+.subject{
+	text-align: left !important;
+}
 .prev-next-list {
 	width: 100%;
 }
