@@ -8,7 +8,7 @@ $(function(){
 
 function advice_register(info){
 	$.ajax({
-		url:"/bestsolution/adviceRegister",
+		url:"/adviceRegister",
 		type: "post",
 		data:JSON.stringify(info),
 		async:false,
@@ -29,14 +29,14 @@ function advice_register(info){
 
 function statisticRegister(info){
 	$.ajax({
-		url:"/bestsolution/statisticRegister",
+		url:"/statisticRegister",
 		type:"post",
 		data:JSON.stringify(info),
 		contentType : "application/json; charset=UTF-8",
 		dataType:"text",
 		async:false,
 		success:function(json){
-			console.log(json);
+			//console.log(json);
 		},
 		error:function(request,status,error){
 			console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);

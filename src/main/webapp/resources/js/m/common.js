@@ -4,9 +4,11 @@ $(function(){
 		$("#menu-bg").stop().fadeToggle(200);
 		var txt = $(this).prop("class");
 		if(txt.indexOf("active") > -1){
-			$("#m-header > .logo-wrap > a > img").prop("src","/bestsolution/resources/img/main/logo-white.png");
+			$("#m-header > .logo-wrap > a > img").prop("src","/resources/img/main/logo-white.png");
+			$("header").css("background","none");
 		}else{			
-			$("#m-header > .logo-wrap > a > img").prop("src","/bestsolution/resources/img/main/logo2.png");
+			$("#m-header > .logo-wrap > a > img").prop("src","/resources/img/main/logo2.png");
+			$("header").css("background","#ffffff");
 		}
 		$(".m-menu-wrap").slideToggle();
 		
@@ -18,7 +20,7 @@ $(function(){
 
 function advice_register(info){
 	$.ajax({
-		url:"/bestsolution/adviceRegister",
+		url:"/adviceRegister",
 		type: "post",
 		data:JSON.stringify(info),
 		async:false,
@@ -39,14 +41,14 @@ function advice_register(info){
 
 function statisticRegister(info){
 	$.ajax({
-		url:"/bestsolution/statisticRegister",
+		url:"/statisticRegister",
 		type:"post",
 		data:JSON.stringify(info),
 		contentType : "application/json; charset=UTF-8",
 		dataType:"text",
 		async:false,
 		success:function(json){
-			console.log(json);
+			//console.log(json);
 		},
 		error:function(request,status,error){
 			console.log("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
