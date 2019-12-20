@@ -58,16 +58,16 @@ public class HomeController {
 			deviceType="unknown";
 			logger.info("디바이스타입= "+deviceType);
 
-			return "main/index";
+			return "main/renewal_pc";
 		}
 		if(device.isMobile()){
 			deviceType="mobile";
 			logger.info("디바이스타입= "+deviceType);			
-			return "main/mIndex";
+			return "main/renewal_m";
 		}else if(device.isTablet()){
 			deviceType="mobile";
 			logger.info("디바이스타입= "+deviceType);			
-			return "main/mIndex";
+			return "main/renewal_m";
 		}else{
 			deviceType="normal";
 			logger.info("디바이스타입= "+deviceType);

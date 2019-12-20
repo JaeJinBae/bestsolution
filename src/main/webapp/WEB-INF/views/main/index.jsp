@@ -112,7 +112,7 @@ $(function(){
 				<div class="inner">
 					<div class="line_vertical"></div>
 					<h4 class="sec_title">SERVICE</h4>
-					<h2>Big idea for improving Your brand value.</h2>
+					<h2>Make your Solution, Make your Strategy</h2>
 					<div class="box_wrap">
 						<div class="box_content">
 							<a href="${pageContext.request.contextPath}/menu02_01">
@@ -120,7 +120,7 @@ $(function(){
 								<img class="box_img2" src="${pageContext.request.contextPath}/resources/img/main/main_account_white.png">
 								<div class="line"></div>
 								<p class="box_title">ACCOUNT</p>
-								<p class="box_txt">브랜드의 문제를 진단하고<br>명쾌한 솔루션을 제시합니다.</p>
+								<p class="box_txt">기업과 브랜드의 상황에 맞는<br>최적화된 마케팅 솔루션을 제안합니다.</p>
 							</a>
 						</div>
 						<div class="box_content">
@@ -128,8 +128,17 @@ $(function(){
 								<img class="box_img1" src="${pageContext.request.contextPath}/resources/img/main/main_digital.png">
 								<img class="box_img2" src="${pageContext.request.contextPath}/resources/img/main/main_digital_white.png">
 								<div class="line"></div>
-								<p class="box_title">DIGITAL</p>
-								<p class="box_txt">디지털 접점에서 고객에게 최고의<br>브랜드 경험을 제공합니다.</p>
+								<p class="box_title">BRAND</p>
+								<p class="box_txt">브랜드 이미지와 시장상황을<br>고려하여 다양한 마케팅 전략을 제공합니다.</p>
+							</a>
+						</div>
+						<div class="box_content">
+							<a href="${pageContext.request.contextPath}/menu02_04">
+								<img class="box_img1" src="${pageContext.request.contextPath}/resources/img/main/main_passion.png">
+								<img class="box_img2" src="${pageContext.request.contextPath}/resources/img/main/main_passion_white.png">
+								<div class="line"></div>
+								<p class="box_title">CREATIVE</p>
+								<p class="box_txt">차별화된 컨셉과 목적에 부합하는<br>카피, 디자인으로 가치를 더합니다.</p>
 							</a>
 						</div>
 						<div class="box_content">
@@ -138,16 +147,7 @@ $(function(){
 								<img class="box_img2" src="${pageContext.request.contextPath}/resources/img/main/main_media_white.png">
 								<div class="line"></div>
 								<p class="box_title">MEDIA</p>
-								<p class="box_txt">강력한 Man-Power를 통해<br>Media Service를 제공합니다.</p>
-							</a>
-						</div>
-						<div class="box_content">
-							<a href="${pageContext.request.contextPath}/menu02_04">
-								<img class="box_img1" src="${pageContext.request.contextPath}/resources/img/main/main_passion.png">
-								<img class="box_img2" src="${pageContext.request.contextPath}/resources/img/main/main_passion_white.png">
-								<div class="line"></div>
-								<p class="box_title">PASSION</p>
-								<p class="box_txt">브랜드를 살아 숨쉬게 하는 열정으로<br>창의적인 아이디어를 제공합니다.</p>
+								<p class="box_txt">온오프라인 미디어를 통한 확산과<br>콘텐츠 재생산에 따른 시너지를 창출합니다.</p>
 							</a>
 						</div>
 						<%-- <div class="box_content">
@@ -160,20 +160,19 @@ $(function(){
 							</a>
 						</div> --%>
 					</div>
-					<h3>We can make high quality result.</h3>
+					<!-- <h3>We can make high quality result.</h3> -->
 				</div><!-- inner end -->
 			</div><!-- sec2 end -->
 			<div class="section_div sec3" id="vision">
 				<div class="inner">
 					<div class="line_vertical"></div>
 					<h4 class="sec_title">VISION</h4>
-					<img src="${pageContext.request.contextPath}/resources/img/main/main_vision_tit2.png">
+					<h3>New Wave, New Solution, New Challenge</h3>
 					<h3>
-						차이는 나와 너를 구분 짓는 힘.<br>
-						차이는 나의 생각과 세상의 생각을 구분 짓는 힘.<br>
-						차이는 나의 브랜드와 그들의 브랜드를 구분 짓는 힘.<br>
-						차이는 우리의 존재 이유입니다.
+						새 시대, 새로운 솔루션을 위한,<br>
+						새로운 도전을 시작하시겠습니까?
 					</h3>
+					<h4>시장과 트랜드와 흐름을 읽고<br>브랜드의 가능성을 현실로 만들겠습니다.</h4>
 				</div><!-- inner end -->
 			</div><!-- sec3 end -->
 			<div class="section_div sec4" id="contactus">

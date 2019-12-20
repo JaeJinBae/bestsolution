@@ -78,7 +78,6 @@
 .inner_box3_wrap{
 	width: 100%;
 	overflow: hidden;
-	margin-top: 100px;
 }
 .inner_box3_wrap > .box_content{
 	width: 32%;
@@ -104,7 +103,7 @@
 	font-size: 17px;
 	text-align: left;
 	line-height: 20px;
-	padding: 20px 35px;
+	padding: 20px 10px;
 }
 
 .inner_box4_wrap{
@@ -168,18 +167,68 @@
 						베스트 솔루션은 민감하고 빠르게 흘러가는 시장에서 <br>
 						브랜드의 정체성과 가치를 흔들리지 않는 솔루션을 제공합니다.<br>
 					</h3>
+					<div class="line_horizon_full"></div>
+					<h4>DATA & PLATFORM MANAGEMENT</h4>
+					<h2>
+						역동적인 데이터와 확고한 플랫폼으로부터<br>
+						반복 가능한 성공 방안을 도출합니다.
+					</h2>
 					<div class="inner_box3_wrap">
 						<div class="box_content">
-							<p class="box_title" style="background: #1fc8db">Brand Analysis</p>
-							<p class="box_txt">브랜드 목표, 정체성 미디어 적합성 기획 그 외 성과분석</p>
+							<p class="box_title" style="background: #1fc8db">마케팅 실행플랫폼</p>
+							<p class="box_txt">브랜드 목표, 사용자환경(디바이스, 채널 등)에 적합한 디지털플랫폼 기획과 개발</p>
 						</div>
 						<div class="box_content">
-							<p class="box_title" style="background: #2cb5e8">Trend Analysis</p>
-							<p class="box_txt">경쟁 및 유사 브랜드의 시장에서의 이미지 외 성과분석</p>
+							<p class="box_title" style="background: #2cb5e8">마케팅 분석플랫폼</p>
+							<p class="box_txt">디지털마케팅 채널에서 수집되는 행동데이터를 시각화/분석하는 플랫폼에 대한 설계와 구축</p>
 						</div>
 						<div class="box_content">
-							<p class="box_title">Marketing Solution</p>
-							<p class="box_txt">브랜드의 리뉴얼 혹은 관련 브랜드 콘텐츠의 재생산을 통한 마케팅 솔루션 제안</p>
+							<p class="box_title">데이터기반 계획/운영</p>
+							<p class="box_txt">데이터 분석을 통해 마케팅 성과와 유관한 지표를 선정하고, 그 목표 설정과 평가, 개선방안을 위한 컨설팅 수행</p>
+						</div>
+					</div><!-- inner_box3_wrap end -->
+					<div class="line_horizon_full"></div>
+					<h4>ONLINE STORE MANAGEMENT</h4>
+					<h2>
+						디지털 구매 채널 내 소비자의 경험 관리를 위한<br>
+						최적의 전략과 솔루션을 제공합니다.
+					</h2>
+					<div class="inner_box4_wrap">
+						<div class="box_content">
+							<p class="box_title" style="background: #3d9889">모니터링</p>
+							<p class="box_txt">주요 온라인 거래선 모니터링</p>
+						</div>
+						<div class="box_content">
+							<p class="box_title" style="background: #16d176">클리닉</p>
+							<p class="box_txt">모니터링 데이터를 기반으로 이커머스 내 트래픽, 컨텐츠, 리뷰 등의 개선활동</p>
+						</div>
+						<div class="box_content">
+							<p class="box_title" style="background: #2ac5a6">마케팅 실행플랫폼</p>
+							<p class="box_txt">브랜드 목표, 사용자환경에 적합한 디저털 플랫폼의 기획과 개발</p>
+						</div>
+						<div class="box_content">
+							<p class="box_title" style="background: #63c8d4">광고집행</p>
+							<p class="box_txt">주요 온라인 거래선과의 협업을 통한 광고 집행</p>
+						</div>
+					</div>
+					<div class="line_horizon_full"></div>
+					<h4>CONNECTED BUSINESS SOLUTION</h4>
+					<h2>
+						디지털 채널 사의 소비자 데이터 기반으로<br>
+						고객의 디지털마케팅 목표에 최적화된 솔루션을 제공합니다.
+					</h2>
+					<div class="inner_box3_wrap">
+						<div class="box_content">
+							<p class="box_title" style="background: #ff4c38">통합 마케팅 전략 수립</p>
+							<p class="box_txt">데이터 기반 통합 글로벌 디지털마케팅 전략 및 기획</p>
+						</div>
+						<div class="box_content">
+							<p class="box_title" style="background: #e4804c">컨텐츠 제작</p>
+							<p class="box_txt">디지털 채널별 최적화 컨텐츠 기획 및 제작</p>
+						</div>
+						<div class="box_content">
+							<p class="box_title" style="background: #e46231">채널 운영</p>
+							<p class="box_txt">소비자와 브랜드간 관계 구축 및 강화를 위한 디지털 소비자 접점 채널 운영</p>
 						</div>
 					</div><!-- inner_box3_wrap end -->
 				</div>
