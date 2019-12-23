@@ -65,7 +65,7 @@
 	font-weight: bold;
 }
 .inner > h2{
-	font-size: 40px;
+	font-size: 35px;
 	font-weight: 500;
 	margin-bottom: 70px;
 	line-height: 61px;

@@ -219,6 +219,9 @@ header{
 	text-align: center;
 	background: #efede5;
 }
+#footer > img{
+	width: 220px;
+}
 #footer > p{ 
 	display: inline-block;
 	padding: 0 15px;

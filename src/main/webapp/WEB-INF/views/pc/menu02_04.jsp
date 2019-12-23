@@ -122,8 +122,8 @@
 			<div class="section_div sec1">
 				<div class="top_title">
 					<div class="line_vertical"></div>
-					<h4>PASSION</h4>
-					<h1>PASSION</h1>
+					<h4>CREATIVE</h4>
+					<h1>CREATIVE</h1>
 					<h3>
 						좋은 마케팅을 위한 위대한 생각 
 					</h3>

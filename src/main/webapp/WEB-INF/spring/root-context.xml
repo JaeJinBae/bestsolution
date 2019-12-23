@@ -19,13 +19,21 @@
 		<property name="password" value="bestsolution12!"/>
 	</bean> -->
 	
-	<!-- 개발용 -->
+	<!-- 호스팅 테스트 -->	
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+		<property name="url" value="jdbc:mysql://localhost:3306/test28377425"/>
+		<property name="username" value="test28377425"/>
+		<property name="password" value="qowowls12!"/>
+	</bean>
+	
+	<!-- 개발용 -->
+	<!-- <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
 		<property name="url" value="jdbc:mysql://127.0.0.1:3306/bestsolution"/>
 		<property name="username" value="root"/>
 		<property name="password" value="rootroot"/>
-	</bean>
+	</bean> -->
 	
 	<!-- 로그 찍히게 하는 녀석 -->
 	<!-- <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">

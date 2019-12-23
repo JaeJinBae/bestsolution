@@ -26,7 +26,7 @@
 						<li class="lnb"><a href="${pageContext.request.contextPath}/m/menu02_01">Account</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/m/menu02_02">Brand</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/m/menu02_03">Media</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/m/menu02_04">Passion</a></li>
+						<li class="lnb"><a href="${pageContext.request.contextPath}/m/menu02_04">Creative</a></li>
 					</ul>
 				</li>
 				<li class="gnb">
