@@ -70,16 +70,42 @@
 	font-weight: bold;
 }
 .inner > h2{
-	font-size: 27px;
+	font-size: 25px;
 	font-weight: 500;
 	margin-bottom: 70px;
 	line-height: 37px;
+}
+.inner_box1_wrap{
+	width: 100%;
+}
+.inner_box1_wrap > .box_content{
+	width: 90%;
+	margin: 20px auto;
+	border: 1px solid lightgray;
+	text-align: center;
+}
+.inner_box1_wrap > .box_content > .box_title{
+	width: 100%;
+	border-bottom: 1px solid #005188;
+	text-align: center;
+	font-size: 23px;
+	font-weight: bold;
+	padding: 60px 0;
+	background: #005188;
+	color: #fff;
+}
+.inner_box1_wrap > .box_content > .box_txt{
+	height: 70px;
+	font-size: 17px;
+	text-align: center;
+	line-height: 22px;
+	padding: 20px;
 }
 .box_wrap{
 	width: 100%;
 	overflow: hidden;
 }
-.box_content{
+.box_wrap > .box_content{
 	width: 47%;
 	height: 150px;
 	float: left;
@@ -87,10 +113,10 @@
 	margin-left: 6px;
 	margin-bottom: 28px;
 }
-.box_txt{
+.box_wrap > .box_content > .box_txt{
 	text-align: center;
-	font-size: 30px;
-	padding-top:40px;
+	font-size: 27px;
+	padding-top: 50px;
 }
 </style>
 <script>
@@ -108,22 +134,37 @@
 					<h4>MEDIA</h4>
 					<h1>MEDIA</h1>
 					<h3>
-						강력한 Man-Power를 통해<br>
-						ATL+Digital+간접·가상광고를<br>
-						통합한 Hybrid Media Service를<br>
-						제공합니다.<br>
+						매체 정보에 대한 풍부한<br>
+						인프라를 통해 만들어내는<br>
+						미디어믹스 전략으로<br>
+						효율을 극대화 합니다.<br>
 					</h3>
 				</div>
 				<div class="inner">
-					<h4>BUYING POWER</h4>
+					<h4>Media & Strategy</h4>
 					<h2>
-						국내 최고의 매체 구매<br>
-						협상력으로 가장 효육적인<br>
-						집행을 보장해 드립니다.<br>
+						광고예산과 광고비 분석과<br>
+						효율적인 미디어믹스 전략<br>
+						광고주의 사업분야에 최적화된<br>
+						미디어 및 예산안 편성<br>
+						소비자 미디어 이용 현황 분석과<br>
+						세대별 라이프스타일 분석을 통해<br>
+						Total Media Solution 제안<br>
 					</h2>
-					<div class="media_img01">
-						<img src="${pageContext.request.contextPath}/resources/img/content/media_img1.png">
-					</div>
+					<div class="inner_box1_wrap">
+						<div class="box_content">
+							<p class="box_title" style="background: #1fc8db">Media Analysis</p>
+							<p class="box_txt">미디어 도달률<br>미디어 주목도<br>미디어 접촉률</p>
+						</div>
+						<div class="box_content">
+							<p class="box_title" style="background: #2cb5e8">Target Analysis</p>
+							<p class="box_txt">타겟 라이프스타일<br>미디어 선호도<br>브랜드 피드백</p>
+						</div>
+						<div class="box_content">
+							<p class="box_title">Media Mix Strategy</p>
+							<p class="box_txt">타겟 선호 미디어 선택<br>매체별 예산안 편성<br>미디어 믹스 실행</p>
+						</div>
+					</div><!-- inner_box1_wrap end -->
 					<div class="line_horizon_full"></div>
 					<h4>SYSTEM POWER</h4>
 					<h2>

@@ -109,7 +109,7 @@ $(function(){
 							<p class="box_txt">광고적 상상력으로 제품과<br>브랜드를 변신시켜 드립니다.</p>
 						</div> --%>
 					</div>
-					<h3>We can make<br>high quality result.</h3>
+					<!-- <h3>We can make<br>high quality result.</h3> -->
 				</div><!-- inner end -->
 			</div><!-- sec2 end -->
 			<div class="section_div sec3" id="vision">

@@ -49,20 +49,22 @@
 	font-size: 50px;
 	font-weight: bold;
 	margin-bottom: 30px;
+	color: #ffffff;
 }
 .top_title > h3{
 	font-size: 25px;
 	font-weight: 500;
 	line-height: 35px;
+	color: #ffffff;
 }
 .inner{
 	text-align: center;
 	padding: 70px 0;
 }
 .inner > h3{
-	font-size: 21px;
+	font-size: 20px;
 	margin: 50px 0; 
-	line-height: 25px;
+	line-height: 30px;
 }
 .inner > h4{
 	font-size: 20px;
@@ -98,35 +100,8 @@
 	height: 70px;
 	font-size: 17px;
 	text-align: left;
-	line-height: 20px;
-	padding: 20px 10px;
-}
-
-.inner_box4_wrap{
-	width: 100%;
-}
-.inner_box4_wrap > .box_content{
-	width: 90%;
-	margin: 20px auto;
-	border: 1px solid lightgray;
-	text-align: center;
-}
-.inner_box4_wrap > .box_content > .box_title{
-	width: 100%;
-	border-bottom: 1px solid #005188;
-	text-align: center;
-	font-size: 23px;
-	font-weight: bold;
-	padding: 60px 0;
-	background: #005188;
-	color: #fff;
-}
-.inner_box4_wrap > .box_content > .box_txt{
-	height: 40px;
-	font-size: 17px;
-	text-align: left;
-	line-height: 20px;
-	padding: 20px 10px;
+	line-height: 22px;
+	padding: 20px;
 }
 </style>
 <script>
@@ -141,97 +116,38 @@
 			<div class="section_div sec1">
 				<div class="top_title">
 					<div class="line_vertical"></div>
-					<h4>DIGITAL</h4>
-					<h1>DIGITAL</h1>
+					<h4>BRAND</h4>
+					<h1>BRAND</h1>
 					<h3>
-						하루24시간, 매순간 디지털<br>
-						접점에서 고객에게 최고의 <br>
-						브랜드 경험을 제공합니다.<br>
+						브랜드는 시장을 대표하고<br>
+						소비자와 트렌드를 주도합니다.
 					</h3>
 				</div>
 				<div class="inner">
+					<h2 style="font-weight: bold !important;">Identity&Management</h2>
 					<h3>
-						사람은 자신의 경험을 토대로 이해하고<br>
-						자신의 경험을 되살려 물건의 좋고<br>
-						나쁨을 판단한다.<br>
-						그리고 사람의 판단은 쉽게 바뀌지 않는다.<br>
-						<br>
-						우리의 고객은 스스로 브랜드를 검색,<br>
-						검증하고 경험합니다.<br>
-						나랑 맞다 또는 이건 진짜라고<br>
-						느껴지면 다른 고객과 공유하고<br>
-						물건을 구입하며 브랜드를 소비합니다.<br>
-						BEST SOLUTION은 다양한<br>
-						디지털 접점과 터치포인트에서<br>
-						고객과 브랜드가 만나 교감할 수 있는<br>
-						솔루션을 제시합니다.<br>
+						브랜드는 소비자들과 소통하고<br> 
+						그 결과에 큰 영향을 줍니다.<br>
+						브랜드에 대한 분석은 소비자를 통해<br>
+						이루어지며 끊임없는 대화와 관리를 통해<br>
+						새로운 아이덴티티로 정립되기도 합니다.<br>
+						베스트 솔루션은 민감하고 빠르게 흘러가는<br>
+						시장에서 브랜드의 정체성과 가치를<br>
+						흔들리지 않는 솔루션을 제공합니다.<br>
 					</h3>
-					<div class="line_horizon_full"></div>
-					<h4>DATA & PLATFORM MANAGEMENT</h4>
-					<h2>
-						역동적인 데이터와 확고한<br>
-						플랫폼으로부터 반복 가능한<br>
-						성공 방안을 도출합니다.<br>
-					</h2>
+					<!-- <div class="line_horizon_full"></div> -->
 					<div class="inner_box3_wrap">
 						<div class="box_content">
-							<p class="box_title">마케팅 실행플랫폼</p>
-							<p class="box_txt">브랜드 목표, 사용자환경(디바이스, 채널 등)에 적합한 디지털플랫폼 기획과 개발</p>
+							<p class="box_title" style="background: #1fc8db">Brand Analysis</p>
+							<p class="box_txt">브랜드 목표, 정체성 미디어 적합성 기획 그 외 성과분석</p>
 						</div>
 						<div class="box_content">
-							<p class="box_title">마케팅 분석플랫폼</p>
-							<p class="box_txt">디지털마케팅 채널에서 수집되는 행동데이터를 시각화/분석하는 플랫폼에 대한 설계와 구축</p>
+							<p class="box_title" style="background: #2cb5e8">Trend Analysis</p>
+							<p class="box_txt">경쟁 및 유사 브랜드의 시장에서의 이미지 외 성과분석</p>
 						</div>
 						<div class="box_content">
-							<p class="box_title">데이터기반 계획/운영</p>
-							<p class="box_txt">데이터 분석을 통해 마케팅 성과와 유관한 지표를 선정하고, 그 목표 설정과 평가, 개선방안을 위한 컨설팅 수행</p>
-						</div>
-					</div><!-- inner_box3_wrap end -->
-					<div class="line_horizon_full"></div>
-					<h4>ONLINE STORE MANAGEMENT</h4>
-					<h2>
-						디지털 구매 채널 내 소비자의<br>
-						경험 관리를 위한 최적의 전략과<br>
-						솔루션을 제공합니다.<br>
-					</h2>
-					<div class="inner_box4_wrap">
-						<div class="box_content">
-							<p class="box_title">모니터링</p>
-							<p class="box_txt">주요 온라인 거래선 모니터링</p>
-						</div>
-						<div class="box_content">
-							<p class="box_title">클리닉</p>
-							<p class="box_txt">모니터링 데이터를 기반으로 이커머스 내 트래픽, 컨텐츠, 리뷰 등의 개선활동</p>
-						</div>
-						<div class="box_content">
-							<p class="box_title">마케팅 실행플랫폼</p>
-							<p class="box_txt">브랜드 목표, 사용자환경에 적합한 디저털 플랫폼의 기획과 개발</p>
-						</div>
-						<div class="box_content">
-							<p class="box_title">광고집행</p>
-							<p class="box_txt">주요 온라인 거래선과의 협업을 통한 광고 집행</p>
-						</div>
-					</div>
-					<div class="line_horizon_full"></div>
-					<h4>CONNECTED BUSINESS SOLUTION</h4>
-					<h2>
-						디지털 채널 사의 소비자 데이터<br>
-						기반으로 고객의 디지털마케팅<br>
-						목표에 최적화된 솔루션을<br>
-						제공합니다.<br>
-					</h2>
-					<div class="inner_box3_wrap">
-						<div class="box_content">
-							<p class="box_title">통합 마케팅 전략 수립</p>
-							<p class="box_txt">데이터 기반 통합 글로벌 디지털마케팅 전략 및 기획</p> 
-						</div>
-						<div class="box_content">
-							<p class="box_title">컨텐츠 제작</p>
-							<p class="box_txt">디지털 채널별 최적화 컨텐츠 기획 및 제작</p>
-						</div>
-						<div class="box_content">
-							<p class="box_title">채널 운영</p>
-							<p class="box_txt">소비자와 브랜드간 관계 구축 및 강화를 위한 디지털 소비자 접점 채널 운영</p>
+							<p class="box_title">Marketing Solution</p>
+							<p class="box_txt">브랜드의 리뉴얼 혹은 관련 브랜드 콘텐츠의 재생산을 통한 마케팅 솔루션 제안</p>
 						</div>
 					</div><!-- inner_box3_wrap end -->
 				</div>

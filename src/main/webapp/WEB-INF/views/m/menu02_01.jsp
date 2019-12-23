@@ -63,16 +63,17 @@
 	font-size: 15px;
 }
 .inner > h4{
-	font-size: 20px;
+	font-size: 18px;
 	margin: 50px 0; 
 	line-height: 30px;
+	letter-spacing: -1px;
 }
 .inner > .inner_box_wrap{
 	width: 100%;
 	overflow: hidden;
 }
 .inner > .inner_box_wrap > .box_content{
-	width: 85%;
+	width: 75%;
 	border: 1px solid lightgray;
 	padding: 25px 18px;
 	margin: 15px auto;
@@ -109,6 +110,7 @@
 	list-style: disc;
 	margin-left: 20px;
 	font-size: 17px;
+	line-height: 25px;
 }
 </style>
 <script>
@@ -126,58 +128,48 @@
 					<h4>ACCOUNT</h4>
 					<h1>ACCOUNT</h1>
 					<h3>
-						브랜드는 소비자에게 사랑받을 때<br>
-						브랜드로서의 가치를 지닙니다.
+						기업과 브랜드의 상황을 기회로<br>지금 그 이상의 가치를 만듭니다.
 					</h3>
 				</div>
 				<div class="inner">
-					<h2>Different Insight,<br>Different Solution</h2>
-					<h5>데이터 기반 국내 최고의 전략적 인사이트로<br>소비자의 인식과 행동을 움직이는<br>통합 솔루션을 제공합니다.</h5>
+					<h2>Insight & Solution</h2>
 					<h4>
-						"내가 그의 이름을 불러주었을 때<br>
-						그는 나에게로 와서 꽃이 되었다."<br>
-						브랜드는 소비자가 불러주어야<br>
-						비로서 시장에서 살아있게 됩니다.<br><br>
-						BEST SOLUTION의 광고는<br>
-						소비자의 인사이트를 간파하여<br>
-						직접적으로 매출에 영향을 줄 수 있는<br>
-						최적의 메시지와 채널,<br>
-						전략을 전개하는 통합솔루션을 펼칩니다.<br>
-						ACCOUNT가 바로, 통합솔루션의<br>
-						컨트롤 타워입니다.<br>
+						다양한 노하우와 브랜드에 대한<br>
+						통찰력과 인사이트로 시장을 주도하고<br>
+						대중을 꿰뚫는 솔루션을 제공합니다.<br>
+						의료기관, 공공기관, 건설부동산, 프랜차이즈 등<br>
+						다양한 경험의 기획/크리에이터들이<br>
+						최적의 마케팅 솔루션과 플랜을 준비합니다.
 					</h4>
 					<div class="inner_box_wrap">
 						<div class="box_content">
 							<img src="${pageContext.request.contextPath}/resources/img/content/account_icon1.png">
-							<p class="box_title">Account Planning</p>
+							<p class="box_title">Account&Strategy</p>
 							<div class="line"></div>
-							<p class="box_txt">소비자에 대한 통찰(Insight)를 바탕으로 브랜드 진단 및 마케팅 커뮤니케이션 전략 도출</p>
+							<p class="box_txt">브랜드/시장에 대한 인사이트를 통해 마케팅 전략을 구상</p>
 							<ul class="box_txt_list">
-								<li>마케팅 커뮤니케이션 전략 기획</li>
-								<li>브랜드 진단 및 컨설팅</li>
-								<li>소비자 리서치</li>
+								<li>기업 브랜드 상황 진단</li>
+								<li>마케팅위한 로드맵</li>
 							</ul>
 						</div>
 						<div class="box_content">
 							<img src="${pageContext.request.contextPath}/resources/img/content/account_icon2.png">
-							<p class="box_title">Customized Planning</p>
+							<p class="box_title">Communication Solution</p>
 							<div class="line"></div>
-							<p class="box_txt">브랜드의 디지털 활동을 진단하고 현재의 디지털 환경과 트렌드에 맞는 디지털 마케팅 솔루션 제시</p>
+							<p class="box_txt">소비자와의 커뮤니케이션을 위한 컨셉 및 크리에이티브 구상</p>
 							<ul class="box_txt_list">
-								<li>브랜드 디지털 활동 진단 및 컨설팅</li>
-								<li>디지털 마케팅 솔루션</li>
-								<li>소비자 데이터 분석</li>
+								<li>소비자/시장 분석</li>
+								<li>크리에이티브 제안</li>
 							</ul>
 						</div>
 						<div class="box_content">
 							<img src="${pageContext.request.contextPath}/resources/img/content/account_icon3.png">
-							<p class="box_title">Connect Planning</p>
+							<p class="box_title">Contents&Campaign</p>
 							<div class="line"></div>
-							<p class="box_txt">디지털 시대 소비자 구매 의사 결정 과정(CDJ)에서 데이터 분석과 소비자 인사이트 결합을 통한 성과 중심의 캠페인 전략 제안과 실행</p>
+							<p class="box_txt">다양한 콘텐츠 생산과 캠페인으로 기업/브랜드의 마케팅 전략 시너지</p>
 							<ul class="box_txt_list">
-								<li>데이터 드리븐 캠페인 전략</li>
-								<li>통합 마케팅 커뮤니케이션 전략</li>
-								<li>성과 모니터링</li>
+								<li>콘텐츠 제작 및 트랜드 분석</li>
+								<li>통합 마케팅 솔루션 제공</li>
 							</ul>
 						</div>
 					</div>

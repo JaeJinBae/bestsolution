@@ -63,11 +63,11 @@ public class HomeController {
 		if(device.isMobile()){
 			deviceType="mobile";
 			logger.info("디바이스타입= "+deviceType);			
-			return "main/renewal_m";
+			return "main/mIndex";
 		}else if(device.isTablet()){
 			deviceType="mobile";
 			logger.info("디바이스타입= "+deviceType);			
-			return "main/renewal_m";
+			return "main/mIndex";
 		}else{
 			deviceType="normal";
 			logger.info("디바이스타입= "+deviceType);

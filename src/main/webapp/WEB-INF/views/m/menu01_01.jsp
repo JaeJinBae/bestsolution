@@ -24,11 +24,17 @@
 	text-align: center;
 	font-size: 20px;
 	line-height: 30px;
+	font-weight: bold;
 }
 .sec1{
 	background: url("${pageContext.request.contextPath}/resources/img/content/overview_sec1_bg.jpg") no-repeat;
 	background-size: cover;
 	background-position: center;
+}
+.sec1 > .inner > .inner_slogan{
+	top: auto;
+	bottom: 20%;
+	color: #ffffff;
 }
 .sec2{
 	background: url("${pageContext.request.contextPath}/resources/img/content/overview_sec2_bg.jpg") no-repeat;
@@ -36,7 +42,7 @@
 	background-position: center;
 }
 .sec2 .inner_slogan{
-	color: #ffffff;
+	color: #222222;
 }
 .sec3{
 	background: url("${pageContext.request.contextPath}/resources/img/content/overview_sec3_bg.jpg") no-repeat;
@@ -44,12 +50,7 @@
 	background-position: center;
 }
 .sec3 .inner_slogan{
-	color: #ffffff;
-}
-.sec4{
-	background: url("${pageContext.request.contextPath}/resources/img/content/overview_sec4_bg.jpg") no-repeat;
-	background-size: cover;
-	background-position: center;
+	color: #333333;
 }
 </style>
 <script>
@@ -69,34 +70,26 @@
 			<div class="section_div sec2">
 				<div class="inner">
 					<h2 class="inner_slogan">
-						베스트 솔루션은 다년간 축적해 온<br>
-						다양한 데이터, 다양한 경험을 통해<br>
-						쌓아온 마케팅 노하우를 바탕으로<br>
-						고객에게 최상의 솔루션을 제공합니다.<br>
+						베스트솔루션은 기업/브랜드/의료기관을<br>
+						비롯해 다양한 마케팅적 솔루션을<br>
+						만들어 오고 있으며 분야에 따른<br>
+						지식과 전문성을 기본으로 다양한<br>
+						커뮤니케이션 전략을 펼치고 있습니다.
 					</h2>
 				</div>
 			</div><!-- sec2 end -->
 			<div class="section_div sec3">
 				<div class="inner">
 					<h2 class="inner_slogan">
-						베스트 솔루션은 오늘날 우리니라 광고<br>
-						크리에이티비티 역사에 획을 그으며<br>
-						명성을 떨치기 위해 지금 이 순간도<br>
-						노력중이며, 다양한 사업 분야에서<br>
-						차별화된 조직과 시스템으로<br>
-						운영하고 있습니다.<br>
+						다양한 영역에서 독특한 시선과<br>
+						차별화된 크리에이티브를 위해<br>
+						베스트솔루션은 지금 이순간도<br>
+						노력하고 있으며 시대의<br>
+						흐름에 뒤쳐지지 않는<br>
+						시스템으로 운영되고 있습니다.
 					</h2>
 				</div>
 			</div><!-- sec3 end -->
-			<div class="section_div sec4">
-				<div class="inner">
-					<h2 class="inner_slogan">
-						국내뿐만 아니라 해외에서도 인정하는<br>
-						Global Agency가 되기 위해 쉬지않고<br>
-						달리고 있습니다.<br>
-					</h2>
-				</div>
-			</div><!-- sec4 end -->
 			<jsp:include page="../include/pcFooter.jsp"></jsp:include><!-- footer end -->
 		</section><!-- main_container end -->
 		<footer>

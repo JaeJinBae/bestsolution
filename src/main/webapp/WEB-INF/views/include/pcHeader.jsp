@@ -19,7 +19,7 @@
 					<span class="gnb_txt">Service</span>
 					<ul class="lnb_wrap">
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_01">Account</a></li>
-						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_02">Digital</a></li>
+						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_02">Brand</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_03">Media</a></li>
 						<li class="lnb"><a href="${pageContext.request.contextPath}/menu02_04">Passion</a></li>
 					</ul>
